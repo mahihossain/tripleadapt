@@ -1,0 +1,9 @@
+.CylinderMain {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 2%;
+    font-size: 10px;
+}

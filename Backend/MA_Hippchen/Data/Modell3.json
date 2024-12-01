@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "627cebe505c5393a9898cea5"
+  },
+  "model": "Modell 3",
+  "nodes": [
+    {
+      "id": "2",
+      "label": "Fahrzeugaufstellung bestimmen",
+      "group": "function",
+      "organizational_unit": [
+        ""
+      ],
+      "x": "-26",
+      "y": "-1044"
+    },
+    {
+      "id": "5",
+      "label": "Einsatzleitung aufbauen",
+      "group": "function",
+      "organizational_unit": [
+        ""
+      ],
+      "x": "-125",
+      "y": "-836"
+    },
+    {
+      "id": "6",
+      "label": "Aktion einleiten",
+      "group": "function",
+      "organizational_unit": [
+        ""
+      ],
+      "x": "-6",
+      "y": "-655"
+    },
+    {
+      "id": "n-4",
+      "label": "OR",
+      "group": "connector",
+      "organizational_unit": [
+        ""
+      ],
+      "x": "-24",
+      "y": "-930"
+    },
+    {
+      "id": "n-5",
+      "label": "Erkundung durchfuehren",
+      "group": "function",
+      "organizational_unit": [
+        ""
+      ],
+      "x": "108",
+      "y": "-839"
+    },
+    {
+      "id": "n-6",
+      "label": "OR",
+      "group": "connector",
+      "organizational_unit": [
+        ""
+      ],
+      "x": "-14",
+      "y": "-739"
+    }
+  ],
+  "edges": [
+    {
+      "from": "2",
+      "to": "n-4",
+      "id": "a2fea06a-3510-4dad-84f9-23d21d98c849"
+    },
+    {
+      "from": "n-4",
+      "to": "5",
+      "id": "e9f8b888-6857-41ab-a945-c9b5306168b6"
+    },
+    {
+      "from": "n-4",
+      "to": "n-5",
+      "id": "c0af6de5-98aa-4c97-b277-3da60c2e71dc"
+    },
+    {
+      "from": "5",
+      "to": "n-6",
+      "id": "8a6c21c1-8af8-4f9f-bb99-b9e69a651819"
+    },
+    {
+      "from": "n-5",
+      "to": "n-6",
+      "id": "9f85a13d-eaad-48a3-abee-025ebca0d9d1"
+    },
+    {
+      "from": "n-6",
+      "to": "6",
+      "id": "d65f052d-7cee-495e-b93d-ef88c12156ce"
+    }
+  ]
+}]

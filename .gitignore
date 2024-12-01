@@ -1,0 +1,10 @@
+.idea
+.git
+node_modules
+Backend/__pycache__/config.cpython-310.pyc
+Backend/clevr/__pycache__/__init__.cpython-310.pyc
+*.pyc
+package-lock.json
+Frontend/demo/package-lock.json
+.vscode/
+.venv/

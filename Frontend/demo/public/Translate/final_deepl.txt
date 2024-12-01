@@ -1,0 +1,10 @@
+Zu Beginn des Modells Evaluation_building_collapse wird die Platzierung der Fahrzeuge bestimmt.
+Von den folgenden Pfaden werden einer oder mehrere durchgeführt:
+	- Im Pfad 1.1 werden Erkundung & Erstmaßnahmen durchgeführt.
+	- Im Pfad 1.2 legt der Zugführer den Einsatzbefehl fest.
+	Von den folgenden Pfaden des Pfades 1.2 werden einer oder mehrere ausgeführt:
+		- Bei Weg 2.1 wird die Suche und Rettung von allen Trupps eingeleitet.
+		- Bei den anderen Pfaden ordnet der Gruppenführer den Raum, stellt die Wasserversorgung ab oder schaltet die Strom-/Gasversorgung ab.
+	- Im Pfad 1.2 wird die Rettung dann von allen Trupps durchgeführt, Überlebensräume werden untersucht und Maßnahmen ergriffen.
+	- Anschließend wird im Pfad 1.2 das Szenario des Gebäudeeinsturzes durch den Zugführer abgeschlossen.
+Am Ende des Modells ist das Szenario des Gebäudeeinsturzes abgeschlossen.

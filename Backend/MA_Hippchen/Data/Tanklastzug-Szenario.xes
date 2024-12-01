@@ -1,0 +1,3536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log xmlns="http://www.xes-standard.org/" xes.version="2.0" xes.creator="RefMod-Miner">
+	<string key="concept:name" value="Tanklastzug-Szenario"/>
+	<trace>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:00.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.001+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.002+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:06.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:06.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:07.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:07.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:13.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:13.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:14.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:18.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:29.000+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:18.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:19.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:19.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:29.001+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:33.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:33.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:25.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.500+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:38.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:38.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:39.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:39.001+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:44.000+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:44.001+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.000+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:41.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:41.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:49.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:49.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:55.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:55.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:56.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:00.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.001+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.001+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:49.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.500+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.001+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.000+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.001+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.000+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:04.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:30.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:30.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:31.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:31.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:40.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:40.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:41.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:00.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.001+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.001+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:25.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:25.001+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:26.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:26.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.001+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.001+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.001+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.000+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.001+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.000+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:04.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:26.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:26.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:27.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:27.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:36.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:36.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:37.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:37.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:41.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:41.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:42.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:00.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.000+01:00"/>
+			<string key="org:resource" value="Einsatzleiter"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:12.001+01:00"/>
+			<string key="org:resource" value="UAV2"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:14.001+01:00"/>
+			<string key="org:resource" value="UAV2"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.001+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="UAV"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="UAV_2"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:33.001+01:00"/>
+			<string key="org:resource" value="UAV_1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.000+01:00"/>
+			<string key="org:resource" value="UAV_2"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.001+01:00"/>
+			<string key="org:resource" value="UAV_1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.002+01:00"/>
+			<string key="org:resource" value="UAV_1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:49.002+01:00"/>
+			<string key="org:resource" value="UAV_1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.001+01:00"/>
+			<string key="org:resource" value="UAV_2"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.000+01:00"/>
+			<string key="org:resource" value="UAV_2"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.001+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Angriffstrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.001+01:00"/>
+			<string key="org:resource" value="Gruppenfuehrer"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:28.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:26.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:49.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungen durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.500+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.001+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.000+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.001+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.000+01:00"/>
+			<string key="org:resource" value="Schlauchtrupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:04.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.001+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.000+01:00"/>
+			<string key="org:resource" value="Dekon-Trupp"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:30.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:30.001+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:31.000+01:00"/>
+			<string key="org:resource" value="Einsatzleitung"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:31.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:40.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:40.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:41.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:00.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:25.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:25.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:26.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:26.000+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.001+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.001+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.001+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.000+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.001+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.000+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.001+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.000+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:04.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:26.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:26.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:27.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:27.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:36.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:36.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:37.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:37.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:41.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:41.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:42.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:00.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.001+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.000+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:10.001+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.000+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:11.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:20.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:25.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:25.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:26.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:26.000+01:00"/>
+			<string key="org:resource" value="Tiemann"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Tiemann"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.001+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:45.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:46.001+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:23.001+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.000+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:24.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:30.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:31.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:40.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:47.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:48.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:02.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:03.001+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.000+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.001+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.000+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:04.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:05.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:20.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:21.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:26.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:26.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:27.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:27.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:36.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:36.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:37.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:37.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:41.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:41.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:42.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:00.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.001+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.000+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.001+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:35.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:35.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:36.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:36.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:36.001+01:00"/>
+			<string key="org:resource" value="Tiemann"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="Tiemann"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:37.001+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:55.000+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:08.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:08.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:09.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:09.001+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:10.000+01:00"/>
+			<string key="org:resource" value="Gorczak"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:10.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.001+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:35.000+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:35.001+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:04.000+01:00"/>
+			<string key="org:resource" value="Grobelny"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:04.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:30.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:30.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:31.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:31.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:52.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:52.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:53.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:53.001+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:19.000+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:19.001+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:20.000+01:00"/>
+			<string key="org:resource" value="Barz"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:52.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:53.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:53.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:20.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:20.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:21.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:21.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:46.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:46.001+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:47.000+01:00"/>
+			<string key="org:resource" value="Slomma"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:47.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:04.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:04.001+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:05.000+01:00"/>
+			<string key="org:resource" value="Zech"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:05.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:29.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:29.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:31:30.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:00.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="CBRN - Einsatz ist gestartet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:01.001+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung auf 50m Sicht durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.000+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:15.001+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung durchgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.000+01:00"/>
+			<string key="org:resource" value="WHS"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:16.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle anfahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:21.001+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatzstelle angefahren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.000+01:00"/>
+			<string key="org:resource" value="Alle Einsatzkraefte"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:22.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Fahrzeugaufstellung bestimmt"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:35.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:35.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:36.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:36.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:50.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gebiet erkundet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:36.001+01:00"/>
+			<string key="org:resource" value="10_GF_44"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Robotereinsatzmoeglichkeit pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.000+01:00"/>
+			<string key="org:resource" value="10_GF_44"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:37.001+01:00"/>
+			<string key="org:resource" value="60-AT-1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Lage mit Einsatzkraeften und Messgeraeten erkunden"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:55.000+01:00"/>
+			<string key="org:resource" value="60-AT-1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:51.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="UAV verfuegbar"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:52.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) durchfuehren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:08.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:08.001+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundungsauftrag (UAV) ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:09.000+01:00"/>
+			<string key="org:resource" value="D1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:09.001+01:00"/>
+			<string key="org:resource" value="60-AT-1"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung ausgefuehrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:10.000+01:00"/>
+			<string key="org:resource" value="60-AT-1"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:10.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abschliessen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Erkundung abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:34.001+01:00"/>
+			<string key="org:resource" value="33_GF_20"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen eingeleitet"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:35.000+01:00"/>
+			<string key="org:resource" value="33_GF_20"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:00:35.001+01:00"/>
+			<string key="org:resource" value="33_GF_20"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen sammeln"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:04.000+01:00"/>
+			<string key="org:resource" value="33_GF_20"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:04.001+01:00"/>
+			<string key="org:resource" value="56_DK_46"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifizierbarkeit des Einsatzes pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.000+01:00"/>
+			<string key="org:resource" value="56_DK_46"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:15.001+01:00"/>
+			<string key="org:resource" value="56_DK_46"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Identifikation nicht moeglich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.000+01:00"/>
+			<string key="org:resource" value="56_DK_46"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:16.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Nach Standardmassen aus FwDV 500 vorgehen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:30.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:30.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Gefahren erkennen abgeschlossen"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:31.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:31.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Informationen auswerten"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:52.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:52.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereichsabsperrung erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:53.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:53.001+01:00"/>
+			<string key="org:resource" value="50-WT-3"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich absperren"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:19.000+01:00"/>
+			<string key="org:resource" value="50-WT-3"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:19.001+01:00"/>
+			<string key="org:resource" value="50-WT-3"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Bereich abgesperrt"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:20.000+01:00"/>
+			<string key="org:resource" value="50-WT-3"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:52.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon nicht ausreichend"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:53.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:01:53.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitern"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:20.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:20.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Dekon Stufe erweitert"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:21.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:21.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich anpassen"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:46.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:46.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Absperrbereich angepasst"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:47.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:02:48.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Auf weiteren Handlungsbedarf pruefen"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:04.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:04.001+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Keine Aktionen erforderlich"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:05.000+01:00"/>
+			<string key="org:resource" value="24_C-DI_24"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:05.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beenden"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:29.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:29.001+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="start"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Einsatz beendet"/>
+			<date key="time:timestamp" value="2020-08-04T00:03:30.000+01:00"/>
+			<string key="org:resource" value="Alle Trupps"/>
+			<string key="status" value="end"/>
+		</event>
+	</trace>
+</log>

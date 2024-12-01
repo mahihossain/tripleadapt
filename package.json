@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@syncfusion/ej2-react-charts": "^20.2.38",
+    "chart.js": "^3.9.1",
+    "react-chartjs-2": "^4.3.1",
+    "react-icons": "^4.4.0",
+    "schedule": "^0.5.0"
+  }
+}

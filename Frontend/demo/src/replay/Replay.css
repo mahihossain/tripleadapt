@@ -1,0 +1,605 @@
+.NavigationBar {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 0%;
+    background-color: none;
+    z-index: 99999999;
+}
+
+.factsStyle {
+    position: absolute;
+    background-color: white;
+    height: 45.5%;
+    width: 18%;
+    left: 79.5%;
+    top: 19.5%;
+}
+
+
+.buttonstyle {
+    position: absolute;
+    background-color: white;
+    height: 7.5%;
+    width: 25%;
+    top: 1.25%;
+    left: 37.5%;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.playback {
+    position: absolute;
+    height: 80%;
+    width: 12%;
+    left: 4%;
+    top: 12%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.background-Playback {
+    position: absolute;
+    background-color: white;;
+    height: 80%;
+    width: 10%;
+    left: 5%;
+    top: 10%;
+    text-align: center;
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 80%;
+}
+
+.play {
+    position: absolute;
+    height: 80%;
+    width: 12%;
+    left: 24%;
+    top: 12%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.background-Play {
+    position: absolute;
+    background-color: white;;
+    height: 80%;
+    width: 10%;
+    left: 24.5%;
+    top: 10%;
+    text-align: center;
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 80%;
+}
+
+.stop {
+    position: absolute;
+    height: 100%;
+    width: 12%;
+    left: 44%;
+    top: 12%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.background-Stop {
+    position: absolute;
+    background-color: white;;
+    height: 80%;
+    width: 10%;
+    left: 45%;
+    top: 10%;
+    text-align: center;
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 80%;
+}
+
+.resume {
+    position: absolute;
+    height: 100%;
+    width: 12%;
+    left: 64%;
+    top: 12%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.background-Resume {
+    position: absolute;
+    background-color: white;;
+    height: 80%;
+    width: 10%;
+    left: 65%;
+    top: 10%;
+    text-align: center;
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 80%;
+}
+
+.playforward {
+    position: absolute;
+    height: 100%;
+    width: 12%;
+    left: 84%;
+    top: 12%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.background-Playforward {
+    position: absolute;
+    background-color: white;
+    height: 80%;
+    width: 10%;
+    left: 85%;
+    top: 10%;
+    text-align: center;
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 80%;
+}
+
+
+.loopstyle {
+    position: absolute;
+    background-color: #dcdcdc;
+    height: 7.5%;
+    width: 15%;
+    top: 1.25%;
+    left: 65%;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.replaybarStyle {
+    position: absolute;
+    background-color: white;
+    height: 7.5%;
+    width: 40%;
+    top: 10%;
+    left: 30%;
+    text-align: center;
+}
+
+.instanzStyle {
+    position: absolute;
+    background-color: #dcdcdc;
+    height: 4%;
+    width: auto;
+    top: 3%;
+    right: 15%;
+    text-align: center;
+}
+
+.basicbar {
+    position: absolute;
+    background-color: grey;
+    height: 40%;
+    width: 98%;
+    top: 30%;
+    left: 1%;
+    border-radius: 25px;    
+}
+
+.progressbar {
+    position: absolute;
+    background-color: #0092e2;
+    height: 40%;
+    top: 30%;
+    left: 1%;
+    border-radius: 25px;    
+}
+
+.logoutStyle_rec {
+    position: absolute;
+    height: 4%;
+    width: auto;
+    top: 1.25%;
+    right: 1%;
+}
+
+.profileStyle_rec {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 1.5%;
+    right: 4%;
+    background-color: #bbb;
+    border-radius: 50%;
+    color: black !important;
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.back_rec {
+    position: absolute;
+    height: 4%;
+    width: auto;
+    bottom: 2.5%;
+    left: 1%;
+    color: black !important;
+}
+
+.personStyle {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 25%;
+    height: 12%;
+    top: 10.5%;
+    left: 0.5%;
+    font-size: 15px;
+}
+
+.cylinderStyle_replay {
+    position: absolute;
+    background-color: white;
+    width: 40%;
+    height: 45.5%;
+    left: 37%;
+    top: 19.5%;
+    font-size: 10px;
+}
+
+.werkBankStyle_replay {
+    position: absolute;
+    background-color: white;
+    width: 32%;
+    height: 45.5%;
+    left: 2.5%;
+    top: 19.5%;
+    font-size: 10px;
+}
+
+.toolStyle_replay {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 15%;
+    height: 45%;
+    top: 19.5%;
+    left: 0.5%;
+}
+
+.taskStyle {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 54%;
+    height: 32%;
+    left: 23%;
+    bottom: 1%;
+    font-size: 10px;
+}
+
+.GraphPng {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%
+}
+
+
+
+.workstationStyle_replay {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 15.5%;
+    height: 45.5%;
+    left: 18.5%;
+    top: 19.5%;
+    font-size: 10px;
+}
+
+.logoStyle {
+    position: absolute;
+    background-color: white;
+    width: 20%;
+    height: auto;
+    left: 0.5%;
+    top: 0%;
+    font-size: 10px;
+}
+
+.lastTaskStyle {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 15%;
+    height: 15%;
+    left: 3%;
+    top: 69%;
+    font-size: 10px;
+}
+
+.nextTaskStyle {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 15%;
+    height: 15%;
+    right: 3%;
+    top: 69%;
+    font-size: 10px;
+}
+
+.optionalStyle {
+    position: absolute;
+    background-color: white;
+    width: 19%;
+    height: 18%;
+    left: 54.5%;
+    top: 5%;
+    font-size: 12px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.counterStyle {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 12%;
+    height: 20%;
+    right: 5%;
+    top: 1%;
+    font-size: 12px;
+}
+
+.taskTime {
+    position: absolute;
+    font-size: 10px;
+    color: #A4A4A4;
+    height: 5%;
+    top: 0%
+}
+
+.taskTime2 {
+    position: absolute;
+    font-size: 18px;
+    height: 5%;
+    top: 15%;
+    left: 2%;
+}
+
+.totalTime {
+    position: absolute;
+    font-size: 10px;
+    color: #A4A4A4;
+    height: 5%;
+    top: 60%
+}
+
+.totalTime2 {
+    position: absolute;
+    font-size: 14px;
+    height: 5%;
+    top: 75%;
+    left: 2%;
+}
+
+.ratingStyle {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 3.5%;
+    height: auto;
+    right: 1%;
+    top: 0.5%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.dot_red {
+    height: 25px;
+    width: 25px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_yellow {
+    height: 25px;
+    width: 25px;
+    background-color: #FFFF00;
+    border-radius: 50%;
+    display: inline-block;
+}
+  
+.dot_green {
+    height: 25px;
+    width: 25px;
+    background-color: #00FF00;
+    border-radius: 50%;
+    display: inline-block;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.MaterialPng_rec {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.MaterialTxt_rec {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 1%;
+    left: 1%;
+    font-size: 10px;
+    color: black;
+}
+
+.abschlussdeckel_rec {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+}
+
+.bundschrauben_rec {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 0%;
+    left: 50.5%;
+    text-align: center;
+}
+
+.kolbenstange_rec {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 33.66%;
+    left: 0%;
+    text-align: center;
+}
+
+.kolbenbaugruppe_rec {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 33.66%;
+    left: 50.5%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mutter_rec {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 67.33%;
+    left: 0%;
+    text-align: center;
+}
+
+.lagerdeckel_rec {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 67.33%;
+    left: 50.5%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.BlauerSchrauber_replay {
+    position: absolute;
+    background-color: white!important;
+    height: 24.24%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.GruenerSchrauber_replay {
+    position: absolute;
+    background-color: white!important;
+    height: 24.25%;
+    width: 100%;
+    top: 25.25%;
+    left: 0%;
+}
+
+.GrauerSchrauber_replay {
+    position: absolute;
+    background-color: white!important;
+    height: 24.25%;
+    width: 100%;
+    top: 50.5%;
+    left: 0%;
+}
+
+.Messschieber_replay {
+    position: absolute;
+    background-color: white!important;
+    height: 24.25%;
+    width: 100%;
+    top: 75.75%;
+    left: 0%;
+}
+
+.WerkzeugId_replay {
+    position: absolute;
+    left: 1%;
+    width: 10%;
+    font-size: 12px;
+    padding: 25px 0px 0px 0px;
+}
+
+.WerkzeugPng_replay {
+    position: absolute;
+    background-color: #dcdcdc;
+    left: 2%;
+    top: 10%;
+    width: 30%;
+    height: 80%;
+    text-align: center;
+}
+
+.WerkzeugTxt_replay {
+    position: absolute;
+    top: 12.5%;
+    left: 34%;
+    width: 40%;
+    height: 75%;
+    font-size: 14px;
+    /* padding: 20px 0; */
+    text-align: center;
+}
+
+.WerkzeugSize_replay {
+    position: absolute;
+    right: 2%;
+    width: 10%;
+    font-size: 10px;
+    padding: 28px 0;
+    text-align: left;
+}

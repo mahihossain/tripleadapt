@@ -1,0 +1,10 @@
+Zu Beginn des Modells Evaluation_Gebaeudeeinsturz wird Fahrzeugaufstellung bestimmt.
+Von den folgenden Pfaden werden einzelne oder mehrere durchgeführt: 
+	- In Pfad 1.1 wird die Erkundung & Erstmassnahmen durchgefuehrt.
+	- In Pfad 1.2 wird Einsatzleitung vom Zugfuehrer aufgebaut.
+	Von den folgenden Pfaden in Pfad 1.2 werden einzelne oder mehrere durchgeführt: 
+		- In Pfad 2.1 wird die Durchsuchungen & Rettungen vom Alle Trupps eingeleitet.
+		- In den weiteren Pfaden wird vom Gruppenfuehrer Ordnung des Raums vollzogen, die Wasserversorgung abgescheltet oder Strom/Gasversorgung abgescheltet.
+	- Anschließend wird in Pfad 1.2 vom Alle Trupps die Rettung durchgefuehrt, Ueberlebensraeume untersucht und Massnahmen durchgefuehrt.
+	- Daraufhin wird in Pfad 1.2 Gebaeudeeinsturz-Szenario vom Zugfuehrer abgeschlasst.
+Am Ende des Modells wird Gebaeudeeinsturz-Szenario abgeschlasst.

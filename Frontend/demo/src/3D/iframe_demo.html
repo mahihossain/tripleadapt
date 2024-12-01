@@ -1,0 +1,50 @@
+<!-- 
+This is a demo page to show how to embed a 3D model in an iframe element
+open this file from the browser after you do npm start, this is like a 
+window that gives you control remotely over the npm server without executing it itself
+-->
+
+<!-- Make html5 standard boilerplate -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Demo</title>
+  <!-- Add a script to make the iframe responsive to the window size -->
+  <script>
+    var iframe = document.querySelector("iframe");
+    var iframeDoc = iframe.contentDocument
+      ? iframe.contentDocument
+      : iframe.contentWindow.document;
+
+    var iframeHTML = iframeDoc.querySelector("html");
+    iframeHTML.style.overflow = "hidden";
+
+    function resizeIframe() {
+      var height = window.innerHeight;
+      var width = window.innerWidth;
+
+      iframe.style.height = height + "px";
+      iframe.style.width = width + "px";
+    }
+
+    window.addEventListener("resize", resizeIframe);
+    resizeIframe();
+  </script>
+  <link />
+</head>
+
+<body>
+  <!-- Add an iFrame element on src="http://localhost:3000/recommendationtest" with adaptive 
+        height and weidth depending on the source window centered in the middle  -->
+
+  <iframe src="http://localhost:3000/cylinder" width="50%" height="50%"
+    style="position: absolute; top: 0; left: 0; border: none" allowfullscreen allow="autoplay"></iframe>
+
+  <iframe src="http://localhost:3000/" width="50%" height="50%"
+    style="position: absolute; top: 0; left: 1000px; border: none" allowfullscreen allow="autoplay"></iframe>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+[{
+  "_id": {
+    "$oid": "61798c938b28b25b5c794acb"
+  },
+  "model": "Evaluation_Gebaeudeeinsturz",
+  "nodes": [
+    {
+      "id": "2",
+      "label": "Erkundung & Erstmassnahmen durchfuehren",
+      "group": "function",
+      "organizational_unit": [
+        ""
+      ],
+      "submodel": "Evaluation_Erkundung_&_Erstmassnahmen",
+      "x": "-770",
+      "y": "-699"
+    },
+    {
+      "id": "4",
+      "label": "OR",
+      "group": "connector",
+      "x": "-208",
+      "y": "-662"
+    },
+    {
+      "id": "5",
+      "label": "Durchsuchungen & einfache Rettungen einleiten",
+      "group": "function",
+      "organizational_unit": [
+        "Alle Trupps"
+      ],
+      "x": "-79",
+      "y": "-556"
+    },
+    {
+      "id": "6",
+      "label": "Ordnung des Raums vollziehen",
+      "group": "function",
+      "organizational_unit": [
+        "Gruppenfuehrer"
+      ],
+      "x": "-318",
+      "y": "-549"
+    },
+    {
+      "id": "7",
+      "label": "Einsatzleitung aufbauen",
+      "group": "function",
+      "organizational_unit": [
+        "Zugfuehrer"
+      ],
+      "x": "-204",
+      "y": "-837"
+    },
+    {
+      "id": "11",
+      "label": "OR",
+      "group": "connector",
+      "x": "-213",
+      "y": "-350"
+    },
+    {
+      "id": "12",
+      "label": "Ortung/technische Rettung durchfuehren",
+      "group": "function",
+      "organizational_unit": [
+        "Alle Trupps"
+      ],
+      "x": "-212",
+      "y": "-266"
+    },
+    {
+      "id": "14",
+      "label": "Ueberlebensraeume gezielt untersuchen",
+      "group": "function",
+      "organizational_unit": [
+        "Alle Trupps"
+      ],
+      "x": "-209",
+      "y": "-90"
+    },
+    {
+      "id": "16",
+      "label": "Raeumung/Abschliessende Massnahmen durchfuehren",
+      "group": "function",
+      "organizational_unit": [
+        "Alle Trupps"
+      ],
+      "x": "-204",
+      "y": "81"
+    },
+    {
+      "id": "18",
+      "label": "Gebaeudeeinsturz-Szenario abschliessen",
+      "group": "function",
+      "organizational_unit": [
+        "Zugfuehrer"
+      ],
+      "x": "-203",
+      "y": "265"
+    },
+    {
+      "id": "19",
+      "label": "Gebaeudeeinsturz-Szenario abgeschlossen",
+      "group": "event",
+      "x": "-200",
+      "y": "453"
+    },
+    {
+      "id": "1_2",
+      "label": "Fahrzeugaufstellung bestimmt",
+      "group": "event",
+      "x": "-214",
+      "y": "-989"
+    },
+    {
+      "id": "1_3",
+      "label": "OR",
+      "group": "connector",
+      "x": "-207",
+      "y": "-936"
+    },
+    {
+      "id": "1_4",
+      "label": "Wasserversorgung abschalten",
+      "group": "function",
+      "organizational_unit": [
+        "Gruppenfuehrer"
+      ],
+      "x": "175",
+      "y": "-552"
+    },
+    {
+      "id": "1_6",
+      "label": "Strom/Gasversorgung abschalten",
+      "group": "function",
+      "organizational_unit": [
+        "Gruppenfuehrer"
+      ],
+      "x": "-530",
+      "y": "-544"
+    },
+    {
+      "id": "1_8",
+      "label": "OR",
+      "group": "connector",
+      "x": "-203",
+      "y": "373"
+    }
+  ],
+  "edges": [
+    {
+      "from": "1_2",
+      "to": "1_3",
+      "id": "57f3bd68-e4ca-4e18-af42-654ec159171f"
+    },
+    {
+      "from": "1_3",
+      "to": "2",
+      "id": "53838aa1-eeb3-4e4d-ab48-1cabcd179bcc"
+    },
+    {
+      "from": "2",
+      "to": "1_8",
+      "id": "ab1a6cff-cad3-4168-98f1-4ea82ff14b7d"
+    },
+    {
+      "from": "4",
+      "to": "5",
+      "id": "c88d4c4a-1094-4376-9104-b4d13c9e15e4"
+    },
+    {
+      "from": "4",
+      "to": "6",
+      "id": "9be6587e-d29a-4c98-94ad-e758fb5a1c36"
+    },
+    {
+      "from": "4",
+      "to": "1_4",
+      "id": "54b71d64-9844-4a1a-b667-218f5c41acf3"
+    },
+    {
+      "from": "4",
+      "to": "1_6",
+      "id": "2c18e164-43b8-4fc0-9baf-ad3f7d3c3bc0"
+    },
+    {
+      "from": "1_3",
+      "to": "7",
+      "id": "c1db68e9-e1e7-4701-ae96-4dae04e54dc5"
+    },
+    {
+      "from": "5",
+      "to": "11",
+      "id": "26e7988a-12aa-47f5-bc8f-13e9cbd649c9"
+    },
+    {
+      "from": "6",
+      "to": "11",
+      "id": "9d2adad0-8570-4fb0-a7c9-c5a087bbea58"
+    },
+    {
+      "from": "7",
+      "to": "4",
+      "id": "c9922184-8ec2-4a35-ac60-0d7a4fef40cb"
+    },
+    {
+      "from": "1_4",
+      "to": "11",
+      "id": "cb856493-6721-432a-b7e6-4afe885d41c0"
+    },
+    {
+      "from": "1_6",
+      "to": "11",
+      "id": "b4d2aee7-7a91-4873-b721-691995d3d227"
+    },
+    {
+      "from": "11",
+      "to": "12",
+      "id": "5b287121-8855-4e2b-873f-a863a4ce7e11"
+    },
+    {
+      "from": "12",
+      "to": "14",
+      "id": "45056367-9a20-4afa-8699-14e9cf61f81f"
+    },
+    {
+      "from": "14",
+      "to": "16",
+      "id": "0481e31c-7d33-47ae-9e79-6152b66ee46e"
+    },
+    {
+      "from": "16",
+      "to": "18",
+      "id": "f7e708fa-7996-463f-b557-0c17a4263b04"
+    },
+    {
+      "from": "18",
+      "to": "1_8",
+      "id": "9d4f9809-8bb6-416e-a976-86a85bd75196"
+    },
+    {
+      "from": "1_8",
+      "to": "19",
+      "id": "ff097fc7-c97d-469b-8cee-b7d5a6f989e3"
+    }
+  ]
+}]

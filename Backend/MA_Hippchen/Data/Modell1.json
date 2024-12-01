@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "61798c938b28b25b5c794acb"
+  },
+    "model": "Modell 1",
+    "nodes": [{
+        "id": "2",
+        "label": "Fahrzeugaufstellung bestimmen",
+        "group": "function",
+        "organizational_unit": [""],
+        "x": "-77",
+        "y": "-652"
+    }, {
+        "id": "5",
+        "label": "Einsatzleitung aufbauen",
+        "group": "function",
+        "organizational_unit": ["Alle Trupps"],
+        "x": "-79",
+        "y": "-556"
+    }, {
+        "id": "6",
+        "label": "Erkundung durchfuehren",
+        "group": "function",
+        "organizational_unit": ["Gruppenfuehrer"],
+        "x": "-79",
+        "y": "-458"
+    }, {
+        "id": "7",
+        "label": "Aktion einleiten",
+        "group": "function",
+        "organizational_unit": ["Zugfuehrer"],
+        "x": "-81",
+        "y": "-364"
+    }],
+    "edges": [{
+        "from": "2",
+        "to": "5",
+        "id": "1014dca5-43e8-41a1-b49f-51289fea3676"
+    }, {
+        "from": "5",
+        "to": "6",
+        "id": "e3e357b7-ab28-454b-b442-0d901df35c5e"
+    }, {
+        "from": "6",
+        "to": "7",
+        "id": "22bea504-ea35-483d-8df3-930321ea2bbf"
+    }]
+}]

@@ -1,0 +1,15 @@
+.modellist {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+.createText {
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+}

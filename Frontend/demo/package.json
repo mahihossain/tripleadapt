@@ -1,0 +1,104 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://127.0.0.1:5000",
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fortawesome/fontawesome-free": "5.15.2",
+    "@mui/icons-material": "^5.0.5",
+    "@mui/material": "^5.0.6",
+    "@mui/styled-engine-sc": "^5.0.4",
+    "@radix-ui/colors": "^0.1.7",
+    "@radix-ui/react-dialog": "^0.1.1",
+    "@radix-ui/react-hover-card": "^0.1.1",
+    "@radix-ui/react-icons": "^1.0.3",
+    "@radix-ui/react-popover": "^0.1.1",
+    "@radix-ui/react-progress": "^0.1.1",
+    "@react-spring/three": "^9.5.0",
+    "@react-three/drei": "8.11.0",
+    "@react-three/fiber": "7.0.26",
+    "@stitches/react": "^1.2.5",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/three": "0.143.0",
+    "axios": "^0.26.1",
+    "bootstrap": "^4.6.2",
+    "chart.js": "^3.9.1",
+    "chartist": "0.11.4",
+    "dotenv": "^16.0.2",
+    "framer-motion": "^4.1.17",
+    "gulp": "^3.9.1",
+    "gulp-append-prepend": "1.0.9",
+    "history": "^5.3.0",
+    "plotly.js": "^2.20.0",
+    "react": ">=18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-calendar": "^3.5.0",
+    "react-chartist": "^0.14.4",
+    "react-chartjs-2": "^4.3.1",
+    "react-clock": "^3.0.0",
+    "react-colorful": "^5.5.1",
+    "react-dom": ">=18.2.0",
+    "react-flow-renderer": "^10.3.0",
+    "react-gauge-chart": "^0.4.0",
+    "react-icons": "^4.4.0",
+    "react-inputs-validation": "^4.8.3",
+    "react-notification-alert": "0.0.13",
+    "react-player": "^2.11.0",
+    "react-plotly.js": "^2.6.0",
+    "react-query": "^3.34.16",
+    "react-router": "^6.2.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^5.0.1",
+    "react-use-gesture": "^9.1.3",
+    "react-vis-network-graph": "^3.0.1",
+    "reactstrap": "8.8.1",
+    "sass": "1.53.0",
+    "styled-components": "^5.3.3",
+    "three": "0.143.0",
+    "valtio": "1.2.7",
+    "vis-data": "^7.1.4",
+    "vis-network": "^9.1.2",
+    "web-vitals": "^1.1.2"
+  },
+  "optionalDependencies": {
+    "jquery": "3.5.1",
+    "typescript": "4.7.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile:scss": "sass src/assets/scss/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.css",
+    "minify:scss": "sass src/assets/scss/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.min.css --style compressed",
+    "build:scss": "npm run compile:scss && npm run minify:scss"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

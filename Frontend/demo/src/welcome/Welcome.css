@@ -1,0 +1,199 @@
+.profileStyle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 1.5%;
+    right: 5%;
+    background-color: #bbb;
+    border-radius: 50%;
+    color: black !important;
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.newUserStyle {
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    top: 30%;
+    left: 35%;
+    font-size: 15px;
+}
+
+.namefield {
+    position: absolute !important;
+    top: 0%;
+    left: 30%;
+    height: 1% !important;
+    width: 35%;
+}
+
+.pw1field {
+    position: absolute !important;
+    top: 20%;
+    left: 30%;
+    height: 1% !important;
+    width: 35%;
+}
+
+.pw2field {
+    position: absolute !important;
+    top: 40%;
+    left: 30%;
+    height: 1% !important;
+    width: 35%;
+}
+
+.differentPWStyle {
+    position: absolute !important;
+    top: 43%;
+    left: 67%;
+    height: auto;
+    width: auto;
+    font-size: 95%;
+}
+
+.rolefield {
+    position: absolute !important;
+    top: 62%;
+    left: 30%;
+    height: 1% !important;
+    width: auto;
+}
+
+.userStyle {
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    top: 30%;
+    left: 35%;
+    font-size: 15px;
+}
+
+.LoadingStyle {
+    position: absolute;
+    top: 54%;
+    left: 62%;
+}
+
+.loginStyle {
+    position: absolute;
+    top: 54%;
+    left: 59%;
+}
+
+.registerStyle {
+    position: absolute;
+    top: 54%;
+    left: 35%;
+}
+
+.logoutStyle {
+    position: absolute;
+    height: 4%;
+    width: auto;
+    top: 1.5%;
+    right: 2%;
+}
+
+.assistance {
+    position: absolute !important;
+    color: black;
+    left: 10%;
+    top: 19.5%;
+    width: 39.5%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #5ab8eb !important;
+
+}
+
+.assistance_clevr {
+    position: absolute !important;
+    color: black;
+    left: 50.5%;
+    top: 19.5%;
+    width: 39.5%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #5ab8eb !important;
+
+}
+
+.workspace {
+    position: absolute !important;
+    color: black;
+    left: 10%;
+    top: 50.5%;
+    width: 26%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: white !important;
+
+}
+
+.analytics {
+    position: absolute !important;
+    color: black;
+    left: 37%;
+    top: 50.5%;
+    width: 26%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: white !important;
+
+}
+
+.last {
+    position: absolute !important;
+    color: black;
+    left: 64%;
+    top: 50.5%;
+    width: 26%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: white !important;
+
+}
+
+.FESTOlogo {
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: 13%;
+    left: 15.7%;
+    top: 0%;
+    font-size: 10px;
+}
+
+.DFKIlogo {
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: 13%;
+    left: 7.5%;
+    top: 0%;
+    font-size: 10px;
+}
+
+.CLEVRLogo {
+    position: absolute;
+    background-color: white;
+    height: 13%;
+    width: auto;
+    left: 0.5%;
+    top: 0%;
+    font-size: 10px;
+
+}

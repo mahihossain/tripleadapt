@@ -1,0 +1,81 @@
+.lastDataContainer {
+    position: absolute !important;
+    left: 15%;
+    top: 9%;
+    width: 85%;
+    height: 90%;
+}
+
+.TimeHistogram {
+    position: absolute !important;
+    left: 0.5%;
+    top: 0%;
+    width: 83%;
+    height: 28%;
+}
+
+.PlotAutosize {
+    display: inline-block;
+    width: 97% !important;
+    height: 97% !important;
+}
+
+.ZeitAllgemein {
+    position: absolute !important;
+    right: 0.5%;
+    top: 0%;
+    width: 15.5%;
+    height: 28%;
+
+}
+
+.FailureHistogram {
+    position: absolute !important;
+    left: 0.5%;
+    top: 33.5% !important;
+    width: 83%;
+    height: 28%;
+    background-color: white;
+
+}
+
+.FehlerAllgemein {
+    position: absolute !important;
+    right: 0.5%;
+    top: 33.5%;
+    width: 15.5%;
+    height: 28%;
+}
+
+.ScoreHistogram {
+    position: absolute !important;
+    left: 0.5%;
+    top: 67% !important;
+    width: 83%;
+    height: 28%;
+    background-color: white;
+
+}
+
+.ScoreAllgemein {
+    position: absolute !important;
+    right: 0.5%;
+    top: 67%;
+    width: 15.5%;
+    height: 28%;
+
+}
+
+.AnalyticsIcon {
+    position: absolute;
+    left: 20%;
+    top: 0%;
+}
+
+.AnalyticsNumber {
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    font-size: 95% !important;
+    width: 93%;
+}

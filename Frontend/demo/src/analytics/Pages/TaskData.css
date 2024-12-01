@@ -1,0 +1,86 @@
+.tasks {
+    position: absolute !important;
+    left: 16%;
+    top: 2%;
+    width: auto;
+    height: 8%;
+}
+
+.TaskDataContainer {
+    position: absolute !important;
+    left: 15%;
+    top: 9%;
+    width: 85%;
+    height: 90%;
+}
+
+.PlotAutosize {
+    display: inline-block;
+    width: 97% !important;
+    height: 97% !important;
+}
+
+.ZeitHistogram {
+    position: absolute !important;
+    left: 0.5%;
+    top: 0%;
+    width: 83%;
+    height: 28%;
+    background-color: white;
+}
+
+.FailureHistogram {
+    position: absolute !important;
+    left: 0.5%;
+    top: 33.5% !important;
+    width: 83%;
+    height: 28%;
+    background-color: white;
+}
+
+.ScoreHistogram {
+    position: absolute !important;
+    left: 0.5%;
+    top: 67% !important;
+    width: 83%;
+    height: 28%;
+    background-color: white;
+}
+
+.avgTime {
+    position: absolute !important;
+    right: 0.5%;
+    top: 0%;
+    width: 15.5%;
+    height: 28%;
+}
+
+.avgFailure {
+    position: absolute !important;
+    right: 0.5%;
+    top: 33.5%;
+    width: 15.5%;
+    height: 28%;
+}
+
+.avgTaskScore {
+    position: absolute !important;
+    right: 0.5%;
+    top: 67%;
+    width: 15.5%;
+    height: 28%;
+}
+
+.TaskIcon {
+    position: absolute;
+    left: 20%;
+    top: 0%;
+}
+
+.TaskNumber {
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    font-size: 95% !important;
+    width: 93%;
+}

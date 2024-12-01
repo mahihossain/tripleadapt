@@ -1,0 +1,4 @@
+Zu Beginn des Modells Modell 1 wird Fahrzeugaufstellung bestimmt.
+Anschließend wird Einsatzleitung von Alle Trupps aufgebaut.
+Als nächstes wird die Erkundung von Gruppenfuehrer durchgefuehrt.
+Am Ende des Modells wird die Aktion von Zugfuehrer eingeleitet.

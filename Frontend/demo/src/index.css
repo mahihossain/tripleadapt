@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+body {
+  margin: 0;
+  font-family: Poppins;
+
+}
+
+body:before {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	/*background: linear-gradient(to bottom, #D8D8D8, #5583da) ;*/
+	background: #DCDCDC;
+}
+
+code {
+  font-family: Poppins,
+    monospace;
+}

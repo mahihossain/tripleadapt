@@ -1,0 +1,1937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="new-diagram" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="12.0.0" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:process id="Process_1" isExecutable="true">
+    <bpmn2:startEvent id="StartEvent_1">
+      <bpmn2:outgoing>Flow_0891wso</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:userTask id="Activity_0dwnqmx" name="Assistenz starten" level="1">
+      <bpmn2:incoming>Flow_0891wso</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0c55vbi</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0891wso" sourceRef="StartEvent_1" targetRef="Activity_0dwnqmx" level="1" />
+    <bpmn2:sequenceFlow id="Flow_0c55vbi" sourceRef="Activity_0dwnqmx" targetRef="Activity_1x5oi6z" />
+    <bpmn2:userTask id="Activity_1x5oi6z" name="Code scannen">
+      <bpmn2:incoming>Flow_0lib5ps</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0c55vbi</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0dpnclf</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:serviceTask id="Activity_146od25" name="Roboter ansteuern Position 1" implementation="${environment.services.execute}">
+      <bpmn2:incoming>Flow_0rfk0qh</bpmn2:incoming>
+      <bpmn2:incoming>Flow_11wcj33</bpmn2:incoming>
+      <bpmn2:incoming>Flow_173s81o</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0b6ut2i</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:userTask id="Activity_0ys7vtp" name="Falscher Code">
+      <bpmn2:incoming>Flow_198ki2j</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0lib5ps</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0lib5ps" sourceRef="Activity_0ys7vtp" targetRef="Activity_1x5oi6z" />
+    <bpmn2:userTask id="Activity_1d8tx27" name="Roboter Sicherheitshinweis">
+      <bpmn2:incoming>Flow_0b6ut2i</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_03o565p</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0b6ut2i" sourceRef="Activity_146od25" targetRef="Activity_1d8tx27" />
+    <bpmn2:serviceTask id="Activity_12xg8b5" name="Abschlussdeckel entnehmen" implementation="${environment.services.execute}">
+      <bpmn2:incoming>Flow_03o565p</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_13xic1n</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0xke3ex</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0ggeu0d</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="Flow_03o565p" sourceRef="Activity_1d8tx27" targetRef="Activity_12xg8b5" />
+    <bpmn2:userTask id="Activity_0m8kg4x" name="Abschlussdeckel entnehmen">
+      <bpmn2:incoming>Flow_13xic1n</bpmn2:incoming>
+      <bpmn2:incoming>Flow_09kyk3s</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_145xke7</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_13xic1n" sourceRef="Activity_12xg8b5" targetRef="Activity_0m8kg4x" />
+    <bpmn2:exclusiveGateway id="Gateway_1p40kwk">
+      <bpmn2:incoming>Flow_145xke7</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1xd59e5</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_14qa122</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_145xke7" sourceRef="Activity_0m8kg4x" targetRef="Gateway_1p40kwk" />
+    <bpmn2:userTask id="Activity_0smc1qu" name="Falscher Pick">
+      <bpmn2:incoming>Flow_1xd59e5</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_09kyk3s</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1xd59e5" name="false" sourceRef="Gateway_1p40kwk" targetRef="Activity_0smc1qu" conditionEvaluation="false">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1p40kwk", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_09kyk3s" sourceRef="Activity_0smc1qu" targetRef="Activity_0m8kg4x" />
+    <bpmn2:userTask id="Activity_0fohncm" name="Abschlussdeckel aufsetzen">
+      <bpmn2:incoming>Flow_14qa122</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0j2a4dv</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_14qa122" name="true" sourceRef="Gateway_1p40kwk" targetRef="Activity_0fohncm" conditionEvaluation="true">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1p40kwk", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:serviceTask id="Activity_1isp672" name="Bundschrauben entnehmen" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_0j2a4dv</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0y42b3u</bpmn2:incoming>
+      <bpmn2:incoming>Flow_16opq5y</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1c2h9iq</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1wplsya</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_147mvmc</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="Flow_0j2a4dv" sourceRef="Activity_0fohncm" targetRef="Activity_1isp672" />
+    <bpmn2:userTask id="Activity_0aintpq" name="Bundschrauben entnehmen" level="1">
+      <bpmn2:incoming>Flow_1c2h9iq</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1gjs6jf</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0059f5f</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1c2h9iq" sourceRef="Activity_1isp672" targetRef="Activity_0aintpq" level="1" />
+    <bpmn2:exclusiveGateway id="Gateway_0j5uuza" level="1">
+      <bpmn2:incoming>Flow_0059f5f</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0qyodwp</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1s0xn03</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_0059f5f" sourceRef="Activity_0aintpq" targetRef="Gateway_0j5uuza" level="1" />
+    <bpmn2:userTask id="Activity_1phjcfm" name="Bundschrauben einsetzen" level="1">
+      <bpmn2:incoming>Flow_0qyodwp</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0xzqebu</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0qyodwp" name="true" sourceRef="Gateway_0j5uuza" targetRef="Activity_1phjcfm" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0j5uuza", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_01gdetf" name="Gelben Schrauber nehmen" level="1">
+      <bpmn2:incoming>Flow_0xzqebu</bpmn2:incoming>
+      <bpmn2:incoming>Flow_17qtm57</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0hymame</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0xzqebu" sourceRef="Activity_1phjcfm" targetRef="Activity_01gdetf" level="1" />
+    <bpmn2:userTask id="Activity_1r3jur7" name="Falscher Pick" level="1">
+      <bpmn2:incoming>Flow_1s0xn03</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1gjs6jf</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1s0xn03" name="false" sourceRef="Gateway_0j5uuza" targetRef="Activity_1r3jur7" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0j5uuza", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_1gjs6jf" sourceRef="Activity_1r3jur7" targetRef="Activity_0aintpq" level="1" />
+    <bpmn2:userTask id="Activity_0p1ciux" name="Bundschrauben festdrehen" level="1">
+      <bpmn2:incoming>Flow_0hymame</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0f2dcgd</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_16nm7cf</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:serviceTask id="Activity_12oktqv" name="Roboter parken" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_16nm7cf</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0jsc2vx</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="Flow_16nm7cf" sourceRef="Activity_0p1ciux" targetRef="Activity_12oktqv" level="1" />
+    <bpmn2:userTask id="Activity_1w27oe4" name="Roboter Sicherheitshinweis" level="1">
+      <bpmn2:incoming>Flow_0jsc2vx</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1kjbgol</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0jsc2vx" sourceRef="Activity_12oktqv" targetRef="Activity_1w27oe4" level="1" />
+    <bpmn2:exclusiveGateway id="Gateway_0hr69r2" level="1">
+      <bpmn2:incoming>Flow_09n3l6l</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1stcfmh</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1jl1d3p</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:exclusiveGateway id="Gateway_0on6j1f" level="1">
+      <bpmn2:incoming>Flow_1kjbgol</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1umc35h</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_09n3l6l</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:exclusiveGateway id="Gateway_07htlgj" level="1">
+      <bpmn2:incoming>Flow_1jl1d3p</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0799gty</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_1kjbgol" sourceRef="Activity_1w27oe4" targetRef="Gateway_0on6j1f" level="1" />
+    <bpmn2:serviceTask id="Activity_0b56vb9" name="Kolbenstange bereitlegen 00536241" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_1umc35h</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_15jmtm2</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="Flow_1umc35h" name="true" sourceRef="Gateway_0on6j1f" targetRef="Activity_0b56vb9" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0on6j1f", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:serviceTask id="Activity_06njxbp" name="Kolbenstange bereitlegen 00536352" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_1stcfmh</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1848jab</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="Flow_1stcfmh" name="true" sourceRef="Gateway_0hr69r2" targetRef="Activity_06njxbp" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0hr69r2", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:serviceTask id="Activity_0q63kvz" name="Kolbenstange bereitlegen 00536249" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_0799gty</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1daviup</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="Flow_0799gty" name="true" sourceRef="Gateway_07htlgj" targetRef="Activity_0q63kvz" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_07htlgj", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_09n3l6l" name="false" sourceRef="Gateway_0on6j1f" targetRef="Gateway_0hr69r2" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0on6j1f", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_1jl1d3p" name="false" sourceRef="Gateway_0hr69r2" targetRef="Gateway_07htlgj" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0hr69r2", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_0oyr2l6" name="Kolbenstange entnehmen" level="1">
+      <bpmn2:incoming>Flow_15jmtm2</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1848jab</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1daviup</bpmn2:incoming>
+      <bpmn2:incoming>Flow_139tpdj</bpmn2:incoming>
+      <bpmn2:incoming>Flow_15evnqd</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_103wp1x</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_15jmtm2" sourceRef="Activity_0b56vb9" targetRef="Activity_0oyr2l6" level="1" />
+    <bpmn2:sequenceFlow id="Flow_1848jab" sourceRef="Activity_06njxbp" targetRef="Activity_0oyr2l6" level="1" />
+    <bpmn2:sequenceFlow id="Flow_1daviup" sourceRef="Activity_0q63kvz" targetRef="Activity_0oyr2l6" level="1" />
+    <bpmn2:exclusiveGateway id="Gateway_1vbbw09" level="1">
+      <bpmn2:incoming>Flow_103wp1x</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0snb5ah</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1nm4laf</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_103wp1x" sourceRef="Activity_0oyr2l6" targetRef="Gateway_1vbbw09" level="1" />
+    <bpmn2:userTask id="Activity_0mbsduo" name="Kolbenstange messen" level="1">
+      <bpmn2:incoming>Flow_0snb5ah</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0cj26b1</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0snb5ah" name="true" sourceRef="Gateway_1vbbw09" targetRef="Activity_0mbsduo" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1vbbw09", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_1w3pfgt" name="Falscher Pick" level="1">
+      <bpmn2:incoming>Flow_1nm4laf</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_139tpdj</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1nm4laf" name="false" sourceRef="Gateway_1vbbw09" targetRef="Activity_1w3pfgt" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1vbbw09", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_139tpdj" sourceRef="Activity_1w3pfgt" targetRef="Activity_0oyr2l6" level="1" />
+    <bpmn2:exclusiveGateway id="Gateway_16idhxj" level="1">
+      <bpmn2:incoming>Flow_0cj26b1</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_18yooes</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_04rhzfp</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_0cj26b1" sourceRef="Activity_0mbsduo" targetRef="Gateway_16idhxj" level="1" />
+    <bpmn2:exclusiveGateway id="Gateway_0y0uny2" level="1">
+      <bpmn2:incoming>Flow_18yooes</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1m49h3o</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0lhoipt</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_18yooes" name="false" sourceRef="Gateway_16idhxj" targetRef="Gateway_0y0uny2" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_16idhxj", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:exclusiveGateway id="Gateway_1bfi89c" level="1">
+      <bpmn2:incoming>Flow_1m49h3o</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_03raq35</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0xalkof</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_1m49h3o" name="false" sourceRef="Gateway_0y0uny2" targetRef="Gateway_1bfi89c" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0y0uny2", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_1lyj3pf" name="Kolbenstange spannen" level="1">
+      <bpmn2:incoming>Flow_04rhzfp</bpmn2:incoming>
+      <bpmn2:incoming>Flow_03raq35</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0lhoipt</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1jykzpm</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_04rhzfp" name="true" sourceRef="Gateway_16idhxj" targetRef="Activity_1lyj3pf" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_16idhxj", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_03raq35" name="true" sourceRef="Gateway_1bfi89c" targetRef="Activity_1lyj3pf" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1bfi89c", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0lhoipt" name="true" sourceRef="Gateway_0y0uny2" targetRef="Activity_1lyj3pf" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0y0uny2", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_1pfzcr5" name="Fehlerhafte Kolbenstange" level="1">
+      <bpmn2:incoming>Flow_0xalkof</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_15evnqd</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0xalkof" name="false" sourceRef="Gateway_1bfi89c" targetRef="Activity_1pfzcr5" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1bfi89c", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_15evnqd" sourceRef="Activity_1pfzcr5" targetRef="Activity_0oyr2l6" level="1" />
+    <bpmn2:serviceTask id="Activity_0of1z8f" name="Kolbenbaugruppe bereitlegen" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_1jykzpm</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0x08u5w</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0xvkn3o</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1nuw9cf</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="Flow_1jykzpm" sourceRef="Activity_1lyj3pf" targetRef="Activity_0of1z8f" level="1" />
+    <bpmn2:userTask id="Activity_1apqtuz" name="Kolbenbaugruppe entnehmen" level="1">
+      <bpmn2:incoming>Flow_0x08u5w</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0rt857m</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1qd7ra5</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0x08u5w" sourceRef="Activity_0of1z8f" targetRef="Activity_1apqtuz" level="1" />
+    <bpmn2:exclusiveGateway id="Gateway_1q46jlw" level="1">
+      <bpmn2:incoming>Flow_1qd7ra5</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0upwklo</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0iwesb3</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_1qd7ra5" sourceRef="Activity_1apqtuz" targetRef="Gateway_1q46jlw" level="1" />
+    <bpmn2:userTask id="Activity_0rl54pk" name="Kolbenbaugruppe aufstecken" level="1">
+      <bpmn2:incoming>Flow_0upwklo</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1bpgg9g</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0upwklo" name="true" sourceRef="Gateway_1q46jlw" targetRef="Activity_0rl54pk" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1q46jlw", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_0w86mm6" name="Falscher Pick" level="1">
+      <bpmn2:incoming>Flow_0iwesb3</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0rt857m</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0iwesb3" name="false" sourceRef="Gateway_1q46jlw" targetRef="Activity_0w86mm6" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1q46jlw", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0rt857m" sourceRef="Activity_0w86mm6" targetRef="Activity_1apqtuz" level="1" />
+    <bpmn2:serviceTask id="Activity_0fz0zax" name="Mutter bereitlegen" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_1bpgg9g</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1tzwbgo</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0mprqfl</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_09koofq</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_07sor2a</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1085mz7</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="Flow_1bpgg9g" sourceRef="Activity_0rl54pk" targetRef="Activity_0fz0zax" level="1" />
+    <bpmn2:userTask id="Activity_0ar9dg0" name="Mutter entnehmen" level="1">
+      <bpmn2:incoming>Flow_09koofq</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1ij35dw</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1p69hg7</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_09koofq" sourceRef="Activity_0fz0zax" targetRef="Activity_0ar9dg0" level="1" />
+    <bpmn2:exclusiveGateway id="Gateway_14n4ljx" level="1">
+      <bpmn2:incoming>Flow_1p69hg7</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1gstyy0</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_17chnff</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_1p69hg7" sourceRef="Activity_0ar9dg0" targetRef="Gateway_14n4ljx" level="1" />
+    <bpmn2:userTask id="Activity_1yok2oh" name="Mutter aufdrehen" level="1">
+      <bpmn2:incoming>Flow_1gstyy0</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1cj9ppg</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1gstyy0" name="true" sourceRef="Gateway_14n4ljx" targetRef="Activity_1yok2oh" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_14n4ljx", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_0g5ohur" name="Falscher Pick" level="1">
+      <bpmn2:incoming>Flow_17chnff</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1ij35dw</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_17chnff" name="false" sourceRef="Gateway_14n4ljx" targetRef="Activity_0g5ohur" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_14n4ljx", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_02wekgu" name="Blauen Schrauber nehmen" level="1">
+      <bpmn2:incoming>Flow_1cj9ppg</bpmn2:incoming>
+      <bpmn2:incoming>Flow_175tlsm</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1wgj3yn</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1cj9ppg" sourceRef="Activity_1yok2oh" targetRef="Activity_02wekgu" level="1" />
+    <bpmn2:userTask id="Activity_1dbzlcf" name="Mutter festdrehen" level="1">
+      <bpmn2:incoming>Flow_1wgj3yn</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1lybekp</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1ij35dw" sourceRef="Activity_0g5ohur" targetRef="Activity_0ar9dg0" level="1" />
+    <bpmn2:sequenceFlow id="Flow_0hymame" sourceRef="Activity_01gdetf" targetRef="Activity_0p1ciux" level="1" />
+    <bpmn2:sequenceFlow id="Flow_1wgj3yn" sourceRef="Activity_02wekgu" targetRef="Activity_1dbzlcf" level="1" />
+    <bpmn2:serviceTask id="Activity_0tszuv3" name="Roboter in Montageposition" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_1lybekp</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0o0d7zg</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1aj3qsm</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:userTask id="Activity_0btmhck" name="Roboter Sicherheitshinweis" level="1">
+      <bpmn2:incoming>Flow_1aj3qsm</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_08v6l74</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_13il5do</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0yzf1x0</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_03jb9b2" name="Vorbereiten" level="1">
+      <bpmn2:incoming>Flow_08v6l74</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_120g44r</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_0axo27h" name="Kolbenstangenbaugruppe einführen" level="1">
+      <bpmn2:incoming>Flow_120g44r</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1x2no9d</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:serviceTask id="Activity_16dfci1" name="Lagerdeckel entnehmen" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_1x2no9d</bpmn2:incoming>
+      <bpmn2:incoming>Flow_07mpm5f</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0oktm92</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0nxi09a</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0pqgn0f</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0kphv87</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:userTask id="Activity_16qudgf" name="Lagerdeckel entnehmen" level="1">
+      <bpmn2:incoming>Flow_0nxi09a</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0ypv5t0</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1oa361y</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1lybekp" sourceRef="Activity_1dbzlcf" targetRef="Activity_0tszuv3" level="1" />
+    <bpmn2:sequenceFlow id="Flow_1aj3qsm" sourceRef="Activity_0tszuv3" targetRef="Activity_0btmhck" level="1" />
+    <bpmn2:sequenceFlow id="Flow_08v6l74" sourceRef="Activity_0btmhck" targetRef="Activity_03jb9b2" level="1" />
+    <bpmn2:sequenceFlow id="Flow_120g44r" sourceRef="Activity_03jb9b2" targetRef="Activity_0axo27h" level="1" />
+    <bpmn2:sequenceFlow id="Flow_1x2no9d" sourceRef="Activity_0axo27h" targetRef="Activity_16dfci1" level="1" />
+    <bpmn2:sequenceFlow id="Flow_0nxi09a" sourceRef="Activity_16dfci1" targetRef="Activity_16qudgf" level="1" />
+    <bpmn2:exclusiveGateway id="Gateway_0lg9jyd" level="1">
+      <bpmn2:incoming>Flow_1oa361y</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1e5w0s1</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0ig6l4h</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_1oa361y" sourceRef="Activity_16qudgf" targetRef="Gateway_0lg9jyd" level="1" />
+    <bpmn2:userTask id="Activity_1lshqnb" name="Lagerdeckel aufsetzen" level="1">
+      <bpmn2:incoming>Flow_1e5w0s1</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0hwtm1f</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1e5w0s1" name="true" sourceRef="Gateway_0lg9jyd" targetRef="Activity_1lshqnb" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0lg9jyd", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_03o67wt" name="Falscher Pick" level="1">
+      <bpmn2:incoming>Flow_0ig6l4h</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0ypv5t0</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0ig6l4h" name="false" sourceRef="Gateway_0lg9jyd" targetRef="Activity_03o67wt" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0lg9jyd", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0ypv5t0" sourceRef="Activity_03o67wt" targetRef="Activity_16qudgf" level="1" />
+    <bpmn2:serviceTask id="Activity_1dqfvyy" name="Bundschrauben bereitlegen" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_0hwtm1f</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0lar16o</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0y6vwau</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_09ant2p</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0vuy8yj</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_145driy</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:userTask id="Activity_0xlnchg" name="Bundschrauben entnehmen" level="1">
+      <bpmn2:incoming>Flow_09ant2p</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1mi6fil</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0vbsfe8</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:exclusiveGateway id="Gateway_0priwji" level="1">
+      <bpmn2:incoming>Flow_0vbsfe8</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_198mqn8</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1xc3zpg</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:userTask id="Activity_1igpgci" name="Bundschrauben einsetzen" level="1">
+      <bpmn2:incoming>Flow_198mqn8</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0yeyy2p</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_0j0werl" name="Falscher Pick" level="1">
+      <bpmn2:incoming>Flow_1xc3zpg</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1mi6fil</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0hwtm1f" sourceRef="Activity_1lshqnb" targetRef="Activity_1dqfvyy" level="1" />
+    <bpmn2:sequenceFlow id="Flow_09ant2p" sourceRef="Activity_1dqfvyy" targetRef="Activity_0xlnchg" level="1" />
+    <bpmn2:sequenceFlow id="Flow_0vbsfe8" sourceRef="Activity_0xlnchg" targetRef="Gateway_0priwji" level="1" />
+    <bpmn2:sequenceFlow id="Flow_198mqn8" name="true" sourceRef="Gateway_0priwji" targetRef="Activity_1igpgci" conditionEvaluation="true" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0priwji", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_1xc3zpg" name="false" sourceRef="Gateway_0priwji" targetRef="Activity_0j0werl" conditionEvaluation="false" level="1">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0priwji", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_1mi6fil" sourceRef="Activity_0j0werl" targetRef="Activity_0xlnchg" level="1" />
+    <bpmn2:userTask id="Activity_0uq9io4" name="Blauer Schrauber nehmen" level="1">
+      <bpmn2:incoming>Flow_0yeyy2p</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0xx7dwf</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0kmgp86</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0yeyy2p" sourceRef="Activity_1igpgci" targetRef="Activity_0uq9io4" level="1" />
+    <bpmn2:sequenceFlow id="Flow_0kmgp86" sourceRef="Activity_0uq9io4" targetRef="Activity_06s2l6d" level="1" />
+    <bpmn2:userTask id="Activity_06s2l6d" name="Bundschrauben festdrehen" level="1">
+      <bpmn2:incoming>Flow_0kmgp86</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1pqujo7</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:serviceTask id="Activity_0pk2bbu" name="Roboter Baugruppe ablegen lassen" implementation="${environment.services.execute}" level="1">
+      <bpmn2:incoming>Flow_1pqujo7</bpmn2:incoming>
+      <bpmn2:incoming>Flow_12xelim</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_18f06g1</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="Flow_1pqujo7" sourceRef="Activity_06s2l6d" targetRef="Activity_0pk2bbu" level="1" />
+    <bpmn2:userTask id="Activity_1lpcy0y" name="Sicherheitshinweis - Roboter aktiv!" level="1">
+      <bpmn2:incoming>Flow_18f06g1</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0ftcvhu</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_18f06g1" sourceRef="Activity_0pk2bbu" targetRef="Activity_1lpcy0y" level="1" />
+    <bpmn2:userTask id="Activity_1ouk6om" name="Assistenz erfolgreich abgeschlossen" level="1">
+      <bpmn2:incoming>Flow_0ftcvhu</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_16z2ffp</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0ftcvhu" sourceRef="Activity_1lpcy0y" targetRef="Activity_1ouk6om" level="1" />
+    <bpmn2:endEvent id="Event_02g0dy5" level="1">
+      <bpmn2:incoming>Flow_16z2ffp</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="Flow_16z2ffp" sourceRef="Activity_1ouk6om" targetRef="Event_02g0dy5" level="1" />
+    <bpmn2:userTask id="Activity_0euh4f7" name="Abschlussdeckel entnehmen und aufsetzen" level="2">
+      <bpmn2:incoming>Flow_0x1f94n</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0xke3ex</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_17ickqj</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_04gxiqa" name="Falscher Pick" level="2">
+      <bpmn2:incoming>Flow_1twgmmn</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0x1f94n</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0x1f94n" sourceRef="Activity_04gxiqa" targetRef="Activity_0euh4f7" level="2" />
+    <bpmn2:userTask id="Activity_17019v8" name="Bundschrauben entnehmen und einsetzen" level="2">
+      <bpmn2:incoming>Flow_1wplsya</bpmn2:incoming>
+      <bpmn2:incoming>Flow_09zjvtc</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_00lb5ys</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_1jd3ay6" name="Bundschrauben entnehmen und einsetzen" level="3">
+      <bpmn2:incoming>Flow_147mvmc</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0ch7ot8</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_14s0qdt</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1wplsya" sourceRef="Activity_1isp672" targetRef="Activity_17019v8" level="2" />
+    <bpmn2:sequenceFlow id="Flow_147mvmc" sourceRef="Activity_1isp672" targetRef="Activity_1jd3ay6" level="3" />
+    <bpmn2:exclusiveGateway id="Gateway_0p6iawa" level="3">
+      <bpmn2:incoming>Flow_03j5ipe</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_14raj39</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0y42b3u</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:userTask id="Activity_1oe9brs" name="Falscher Pick" level="3">
+      <bpmn2:incoming>Flow_14raj39</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0ius6kc</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_14raj39" name="false" sourceRef="Gateway_0p6iawa" targetRef="Activity_1oe9brs" conditionEvaluation="false" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0p6iawa", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0ius6kc" sourceRef="Activity_1oe9brs" targetRef="Activity_1e3r9ol" level="3" />
+    <bpmn2:sequenceFlow id="Flow_0y42b3u" name="true" sourceRef="Gateway_0p6iawa" targetRef="Activity_1isp672" conditionEvaluation="true" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0p6iawa", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_1e3r9ol" name="Abschlussdeckel entnehmen und aufsetzen" level="3">
+      <bpmn2:incoming>Flow_0ius6kc</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0ggeu0d</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_03j5ipe</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_03j5ipe" sourceRef="Activity_1e3r9ol" targetRef="Gateway_0p6iawa" level="3" />
+    <bpmn2:exclusiveGateway id="Gateway_1bpvi3y" level="2">
+      <bpmn2:incoming>Flow_00lb5ys</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_09veouh</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_17qtm57</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_00lb5ys" sourceRef="Activity_17019v8" targetRef="Gateway_1bpvi3y" level="2" />
+    <bpmn2:userTask id="Activity_0vmicul" name="Falscher Pick" level="2">
+      <bpmn2:incoming>Flow_09veouh</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_09zjvtc</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_09veouh" name="false" sourceRef="Gateway_1bpvi3y" targetRef="Activity_0vmicul" conditionEvaluation="false" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1bpvi3y", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_09zjvtc" sourceRef="Activity_0vmicul" targetRef="Activity_17019v8" level="2" />
+    <bpmn2:exclusiveGateway id="Gateway_046fzi1" level="3">
+      <bpmn2:incoming>Flow_14s0qdt</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0f2dcgd</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1ee2dm5</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_14s0qdt" sourceRef="Activity_1jd3ay6" targetRef="Gateway_046fzi1" level="3" />
+    <bpmn2:sequenceFlow id="Flow_17qtm57" name="true" sourceRef="Gateway_1bpvi3y" targetRef="Activity_01gdetf" conditionEvaluation="true" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1bpvi3y", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0f2dcgd" name="true" sourceRef="Gateway_046fzi1" targetRef="Activity_0p1ciux" conditionEvaluation="true" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_046fzi1", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_1mgw70l" name="Falscher Pick" level="3">
+      <bpmn2:incoming>Flow_1ee2dm5</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0ch7ot8</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1ee2dm5" name="false" sourceRef="Gateway_046fzi1" targetRef="Activity_1mgw70l" conditionEvaluation="false" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_046fzi1", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0ch7ot8" sourceRef="Activity_1mgw70l" targetRef="Activity_1jd3ay6" level="3" />
+    <bpmn2:exclusiveGateway id="Gateway_1grvdng" level="2">
+      <bpmn2:incoming>Flow_17ickqj</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1twgmmn</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_16opq5y</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_17ickqj" sourceRef="Activity_0euh4f7" targetRef="Gateway_1grvdng" level="2" />
+    <bpmn2:sequenceFlow id="Flow_1twgmmn" name="false" sourceRef="Gateway_1grvdng" targetRef="Activity_04gxiqa" conditionEvaluation="false" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1grvdng", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_16opq5y" name="true" sourceRef="Gateway_1grvdng" targetRef="Activity_1isp672" conditionEvaluation="true" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1grvdng", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_0k23yrd" name="Falscher Pick" level="2">
+      <bpmn2:incoming>Flow_1dnkxco</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0f42syt</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_0jlyede" name="Falscher Pick" level="3">
+      <bpmn2:incoming>Flow_1gob178</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1uqgnjm</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_0ql63yt" name="Kolbenbaugruppe entnehmen und aufstecken" level="2">
+      <bpmn2:incoming>Flow_0f42syt</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0xvkn3o</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1ugd1u9</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_1e3a8cs" name="Kolbenbaugruppe entnehmen und aufstecken" level="3">
+      <bpmn2:incoming>Flow_1uqgnjm</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1nuw9cf</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0d0iok7</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:exclusiveGateway id="Gateway_1skqb02" level="2">
+      <bpmn2:incoming>Flow_1ugd1u9</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1dnkxco</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1tzwbgo</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_1ugd1u9" sourceRef="Activity_0ql63yt" targetRef="Gateway_1skqb02" level="2" />
+    <bpmn2:sequenceFlow id="Flow_1dnkxco" name="false" sourceRef="Gateway_1skqb02" targetRef="Activity_0k23yrd" conditionEvaluation="false" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1skqb02", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0f42syt" sourceRef="Activity_0k23yrd" targetRef="Activity_0ql63yt" level="2" />
+    <bpmn2:sequenceFlow id="Flow_1tzwbgo" name="true" sourceRef="Gateway_1skqb02" targetRef="Activity_0fz0zax" conditionEvaluation="true" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1skqb02", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:exclusiveGateway id="Gateway_1favtgk" level="3">
+      <bpmn2:incoming>Flow_0d0iok7</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1gob178</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0mprqfl</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_0d0iok7" sourceRef="Activity_1e3a8cs" targetRef="Gateway_1favtgk" level="3" />
+    <bpmn2:sequenceFlow id="Flow_1gob178" name="false" sourceRef="Gateway_1favtgk" targetRef="Activity_0jlyede" conditionEvaluation="false" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1favtgk", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_1uqgnjm" sourceRef="Activity_0jlyede" targetRef="Activity_1e3a8cs" level="3" />
+    <bpmn2:sequenceFlow id="Flow_0mprqfl" name="true" sourceRef="Gateway_1favtgk" targetRef="Activity_0fz0zax" conditionEvaluation="true" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_1favtgk", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_184jhj3" name="Mutter entnehmen und aufdrehen" level="2">
+      <bpmn2:incoming>Flow_07sor2a</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1qjdpxd</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0h8x9pa</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_0k8r56e" name="Mutter entnehmen, auf- und festdrehen" level="3">
+      <bpmn2:incoming>Flow_1085mz7</bpmn2:incoming>
+      <bpmn2:incoming>Flow_17dry30</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_13562a3</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_07sor2a" sourceRef="Activity_0fz0zax" targetRef="Activity_184jhj3" level="2" />
+    <bpmn2:sequenceFlow id="Flow_1085mz7" sourceRef="Activity_0fz0zax" targetRef="Activity_0k8r56e" level="3" />
+    <bpmn2:exclusiveGateway id="Gateway_0e28ao5" level="2">
+      <bpmn2:incoming>Flow_0h8x9pa</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_170cm60</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_175tlsm</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_0h8x9pa" sourceRef="Activity_184jhj3" targetRef="Gateway_0e28ao5" level="2" />
+    <bpmn2:userTask id="Activity_15abvim" name="Falscher Pick" level="2">
+      <bpmn2:incoming>Flow_170cm60</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1qjdpxd</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_1jvx4zn" name="Falscher Pick" level="3">
+      <bpmn2:incoming>Flow_1y109ks</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_17dry30</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:exclusiveGateway id="Gateway_15kxrc0" level="3">
+      <bpmn2:incoming>Flow_13562a3</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1y109ks</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0o0d7zg</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_13562a3" sourceRef="Activity_0k8r56e" targetRef="Gateway_15kxrc0" level="3" />
+    <bpmn2:sequenceFlow id="Flow_1y109ks" name="false" sourceRef="Gateway_15kxrc0" targetRef="Activity_1jvx4zn" conditionEvaluation="false" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_15kxrc0", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_17dry30" sourceRef="Activity_1jvx4zn" targetRef="Activity_0k8r56e" level="3" />
+    <bpmn2:sequenceFlow id="Flow_170cm60" name="false" sourceRef="Gateway_0e28ao5" targetRef="Activity_15abvim" conditionEvaluation="false" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0e28ao5", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_1qjdpxd" sourceRef="Activity_15abvim" targetRef="Activity_184jhj3" level="2" />
+    <bpmn2:sequenceFlow id="Flow_175tlsm" name="true" sourceRef="Gateway_0e28ao5" targetRef="Activity_02wekgu" conditionEvaluation="true" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0e28ao5", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0o0d7zg" name="true" sourceRef="Gateway_15kxrc0" targetRef="Activity_0tszuv3" conditionEvaluation="true" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_15kxrc0", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0xvkn3o" sourceRef="Activity_0of1z8f" targetRef="Activity_0ql63yt" level="2" />
+    <bpmn2:sequenceFlow id="Flow_1nuw9cf" sourceRef="Activity_0of1z8f" targetRef="Activity_1e3a8cs" level="3" />
+    <bpmn2:userTask id="Activity_07q9gmf" name="Kolbenstangenbaugruppe vorbereiten und einführen" level="2">
+      <bpmn2:incoming>Flow_13il5do</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_07mpm5f</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_0ofzbk3" name="Kolbenstangenbaugruppe vorbereiten und einführen" level="3">
+      <bpmn2:incoming>Flow_0yzf1x0</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0oktm92</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_13il5do" sourceRef="Activity_0btmhck" targetRef="Activity_07q9gmf" level="2" />
+    <bpmn2:sequenceFlow id="Flow_0yzf1x0" sourceRef="Activity_0btmhck" targetRef="Activity_0ofzbk3" level="3" />
+    <bpmn2:sequenceFlow id="Flow_07mpm5f" sourceRef="Activity_07q9gmf" targetRef="Activity_16dfci1" level="2" />
+    <bpmn2:sequenceFlow id="Flow_0oktm92" sourceRef="Activity_0ofzbk3" targetRef="Activity_16dfci1" level="3" />
+    <bpmn2:userTask id="Activity_07e98va" name="Lagerdeckel entnehmen und aufsetzen" level="2">
+      <bpmn2:incoming>Flow_0pqgn0f</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0yejyl3</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0riij1p</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_00e403m" name="Lagerdeckel entnehmen und aufsetzen" level="3">
+      <bpmn2:incoming>Flow_0kphv87</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1icmrsu</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0y6isso</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0pqgn0f" sourceRef="Activity_16dfci1" targetRef="Activity_07e98va" level="2" />
+    <bpmn2:exclusiveGateway id="Gateway_0wno9k9" level="2">
+      <bpmn2:incoming>Flow_0riij1p</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1t024mn</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0lar16o</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_0riij1p" sourceRef="Activity_07e98va" targetRef="Gateway_0wno9k9" level="2" />
+    <bpmn2:userTask id="Activity_0mgqzci" name="Falscher Pick" level="2">
+      <bpmn2:incoming>Flow_1t024mn</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0yejyl3</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_1t024mn" name="false" sourceRef="Gateway_0wno9k9" targetRef="Activity_0mgqzci" conditionEvaluation="false" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0wno9k9", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0yejyl3" sourceRef="Activity_0mgqzci" targetRef="Activity_07e98va" level="2" />
+    <bpmn2:sequenceFlow id="Flow_0lar16o" name="true" sourceRef="Gateway_0wno9k9" targetRef="Activity_1dqfvyy" conditionEvaluation="true" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0wno9k9", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0kphv87" sourceRef="Activity_16dfci1" targetRef="Activity_00e403m" level="3" />
+    <bpmn2:exclusiveGateway id="Gateway_0iwv15t" level="3">
+      <bpmn2:incoming>Flow_0y6isso</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0e0vhgb</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0y6vwau</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_0y6isso" sourceRef="Activity_00e403m" targetRef="Gateway_0iwv15t" level="3" />
+    <bpmn2:userTask id="Activity_1h9k1yq" name="Falscher Pick" level="3">
+      <bpmn2:incoming>Flow_0e0vhgb</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1icmrsu</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0e0vhgb" name="false" sourceRef="Gateway_0iwv15t" targetRef="Activity_1h9k1yq" conditionEvaluation="false" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0iwv15t", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_1icmrsu" sourceRef="Activity_1h9k1yq" targetRef="Activity_00e403m" level="3" />
+    <bpmn2:sequenceFlow id="Flow_0y6vwau" name="true" sourceRef="Gateway_0iwv15t" targetRef="Activity_1dqfvyy" conditionEvaluation="true" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0iwv15t", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_0c7mtoc" name="Bundschrauben entnehmen und einsetzen" level="2">
+      <bpmn2:incoming>Flow_0vuy8yj</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0vm26za</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1cr53g4</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Activity_1y4aznv" name="Bundschrauben entnehmen, einsetzen und festdrehen" level="3">
+      <bpmn2:incoming>Flow_145driy</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1mvmt0t</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1fwhx8m</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0vuy8yj" sourceRef="Activity_1dqfvyy" targetRef="Activity_0c7mtoc" level="2" />
+    <bpmn2:sequenceFlow id="Flow_145driy" sourceRef="Activity_1dqfvyy" targetRef="Activity_1y4aznv" level="3" />
+    <bpmn2:exclusiveGateway id="Gateway_0glwk7v" level="2">
+      <bpmn2:incoming>Flow_1cr53g4</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0xx7dwf</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_01q8leo</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_1cr53g4" sourceRef="Activity_0c7mtoc" targetRef="Gateway_0glwk7v" level="2" />
+    <bpmn2:sequenceFlow id="Flow_0xx7dwf" name="true" sourceRef="Gateway_0glwk7v" targetRef="Activity_0uq9io4" conditionEvaluation="true" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0glwk7v", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_14cvcvz" name="Falscher Pick" level="2">
+      <bpmn2:incoming>Flow_01q8leo</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0vm26za</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_01q8leo" name="false" sourceRef="Gateway_0glwk7v" targetRef="Activity_14cvcvz" conditionEvaluation="false" level="2">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0glwk7v", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0vm26za" sourceRef="Activity_14cvcvz" targetRef="Activity_0c7mtoc" level="2" />
+    <bpmn2:exclusiveGateway id="Gateway_12mxiyc" level="3">
+      <bpmn2:incoming>Flow_1fwhx8m</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_12xelim</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0xbt5ta</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_1fwhx8m" sourceRef="Activity_1y4aznv" targetRef="Gateway_12mxiyc" level="3" />
+    <bpmn2:sequenceFlow id="Flow_12xelim" name="true" sourceRef="Gateway_12mxiyc" targetRef="Activity_0pk2bbu" conditionEvaluation="true" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_12mxiyc", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Activity_073j171" name="Falscher Pick" level="3">
+      <bpmn2:incoming>Flow_0xbt5ta</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1mvmt0t</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="Flow_0xbt5ta" name="false" sourceRef="Gateway_12mxiyc" targetRef="Activity_073j171" conditionEvaluation="false" level="3">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_12mxiyc", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_1mvmt0t" sourceRef="Activity_073j171" targetRef="Activity_1y4aznv" level="3" />
+    <bpmn2:sequenceFlow id="Flow_0xke3ex" sourceRef="Activity_12xg8b5" targetRef="Activity_0euh4f7" level="2" />
+    <bpmn2:sequenceFlow id="Flow_0ggeu0d" sourceRef="Activity_12xg8b5" targetRef="Activity_1e3r9ol" level="3" />
+    <bpmn2:exclusiveGateway id="Gateway_0b63m77">
+      <bpmn2:incoming>Flow_0dpnclf</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0rfk0qh</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1kxg50m</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_0dpnclf" sourceRef="Activity_1x5oi6z" targetRef="Gateway_0b63m77" />
+    <bpmn2:sequenceFlow id="Flow_0rfk0qh" name="true" sourceRef="Gateway_0b63m77" targetRef="Activity_146od25" conditionEvaluation="true">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0b63m77", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:exclusiveGateway id="Gateway_0bp4mif">
+      <bpmn2:incoming>Flow_1kxg50m</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_11wcj33</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0sbtmtn</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_1kxg50m" name="false" sourceRef="Gateway_0b63m77" targetRef="Gateway_0bp4mif" conditionEvaluation="false">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0b63m77", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_11wcj33" name="true" sourceRef="Gateway_0bp4mif" targetRef="Activity_146od25" conditionEvaluation="true">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0bp4mif", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:exclusiveGateway id="Gateway_0wvq20m">
+      <bpmn2:incoming>Flow_0sbtmtn</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_173s81o</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_198ki2j</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="Flow_0sbtmtn" name="false" sourceRef="Gateway_0bp4mif" targetRef="Gateway_0wvq20m" conditionEvaluation="false">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0bp4mif", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_173s81o" name="true" sourceRef="Gateway_0wvq20m" targetRef="Activity_146od25" conditionEvaluation="true">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0wvq20m", true, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_198ki2j" name="false" sourceRef="Gateway_0wvq20m" targetRef="Activity_0ys7vtp" conditionEvaluation="false">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="JavaScript">this.environment.services.resolveXORFlow("Gateway_0wvq20m", false, next);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_1" bpmnElement="StartEvent_1">
+        <dc:Bounds x="152" y="240" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0dwnqmx_di" bpmnElement="Activity_0dwnqmx">
+        <dc:Bounds x="300" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1x5oi6z_di" bpmnElement="Activity_1x5oi6z">
+        <dc:Bounds x="510" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_146od25_di" bpmnElement="Activity_146od25">
+        <dc:Bounds x="920" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ys7vtp_di" bpmnElement="Activity_0ys7vtp">
+        <dc:Bounds x="510" y="410" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1d8tx27_di" bpmnElement="Activity_1d8tx27">
+        <dc:Bounds x="1080" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_12xg8b5_di" bpmnElement="Activity_12xg8b5">
+        <dc:Bounds x="1230" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0m8kg4x_di" bpmnElement="Activity_0m8kg4x">
+        <dc:Bounds x="1380" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1p40kwk_di" bpmnElement="Gateway_1p40kwk" isMarkerVisible="true">
+        <dc:Bounds x="1555" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0smc1qu_di" bpmnElement="Activity_0smc1qu">
+        <dc:Bounds x="1530" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0fohncm_di" bpmnElement="Activity_0fohncm">
+        <dc:Bounds x="1680" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1isp672_di" bpmnElement="Activity_1isp672">
+        <dc:Bounds x="1860" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0aintpq_di" bpmnElement="Activity_0aintpq">
+        <dc:Bounds x="2040" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0j5uuza_di" bpmnElement="Gateway_0j5uuza" isMarkerVisible="true">
+        <dc:Bounds x="2225" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1phjcfm_di" bpmnElement="Activity_1phjcfm">
+        <dc:Bounds x="2360" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_01gdetf_di" bpmnElement="Activity_01gdetf">
+        <dc:Bounds x="2550" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1r3jur7_di" bpmnElement="Activity_1r3jur7">
+        <dc:Bounds x="2200" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0p1ciux_di" bpmnElement="Activity_0p1ciux">
+        <dc:Bounds x="2890" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_12oktqv_di" bpmnElement="Activity_12oktqv">
+        <dc:Bounds x="3090" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1w27oe4_di" bpmnElement="Activity_1w27oe4">
+        <dc:Bounds x="3290" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0hr69r2_di" bpmnElement="Gateway_0hr69r2" isMarkerVisible="true">
+        <dc:Bounds x="3445" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0on6j1f_di" bpmnElement="Gateway_0on6j1f" isMarkerVisible="true">
+        <dc:Bounds x="3445" y="135" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_07htlgj_di" bpmnElement="Gateway_07htlgj" isMarkerVisible="true">
+        <dc:Bounds x="3445" y="335" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0b56vb9_di" bpmnElement="Activity_0b56vb9">
+        <dc:Bounds x="3600" y="120" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_06njxbp_di" bpmnElement="Activity_06njxbp">
+        <dc:Bounds x="3600" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0q63kvz_di" bpmnElement="Activity_0q63kvz">
+        <dc:Bounds x="3600" y="320" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0oyr2l6_di" bpmnElement="Activity_0oyr2l6">
+        <dc:Bounds x="3800" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1vbbw09_di" bpmnElement="Gateway_1vbbw09" isMarkerVisible="true">
+        <dc:Bounds x="3985" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0mbsduo_di" bpmnElement="Activity_0mbsduo">
+        <dc:Bounds x="4120" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1w3pfgt_di" bpmnElement="Activity_1w3pfgt">
+        <dc:Bounds x="3960" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_16idhxj_di" bpmnElement="Gateway_16idhxj" isMarkerVisible="true">
+        <dc:Bounds x="4305" y="135" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0y0uny2_di" bpmnElement="Gateway_0y0uny2" isMarkerVisible="true">
+        <dc:Bounds x="4305" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1bfi89c_di" bpmnElement="Gateway_1bfi89c" isMarkerVisible="true">
+        <dc:Bounds x="4305" y="335" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1lyj3pf_di" bpmnElement="Activity_1lyj3pf">
+        <dc:Bounds x="4440" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1pfzcr5_di" bpmnElement="Activity_1pfzcr5">
+        <dc:Bounds x="4280" y="430" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0of1z8f_di" bpmnElement="Activity_0of1z8f">
+        <dc:Bounds x="4630" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1apqtuz_di" bpmnElement="Activity_1apqtuz">
+        <dc:Bounds x="4820" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1q46jlw_di" bpmnElement="Gateway_1q46jlw" isMarkerVisible="true">
+        <dc:Bounds x="5015" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0rl54pk_di" bpmnElement="Activity_0rl54pk">
+        <dc:Bounds x="5160" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0w86mm6_di" bpmnElement="Activity_0w86mm6">
+        <dc:Bounds x="4990" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0fz0zax_di" bpmnElement="Activity_0fz0zax">
+        <dc:Bounds x="5370" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ar9dg0_di" bpmnElement="Activity_0ar9dg0">
+        <dc:Bounds x="5580" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_14n4ljx_di" bpmnElement="Gateway_14n4ljx" isMarkerVisible="true">
+        <dc:Bounds x="5795" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1yok2oh_di" bpmnElement="Activity_1yok2oh">
+        <dc:Bounds x="5960" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0g5ohur_di" bpmnElement="Activity_0g5ohur">
+        <dc:Bounds x="5770" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_02wekgu_di" bpmnElement="Activity_02wekgu">
+        <dc:Bounds x="6140" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1dbzlcf_di" bpmnElement="Activity_1dbzlcf">
+        <dc:Bounds x="6300" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0tszuv3_di" bpmnElement="Activity_0tszuv3">
+        <dc:Bounds x="6460" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0btmhck_di" bpmnElement="Activity_0btmhck">
+        <dc:Bounds x="6640" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_03jb9b2_di" bpmnElement="Activity_03jb9b2">
+        <dc:Bounds x="6830" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0axo27h_di" bpmnElement="Activity_0axo27h">
+        <dc:Bounds x="7000" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_16dfci1_di" bpmnElement="Activity_16dfci1">
+        <dc:Bounds x="7160" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_16qudgf_di" bpmnElement="Activity_16qudgf">
+        <dc:Bounds x="7340" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0lg9jyd_di" bpmnElement="Gateway_0lg9jyd" isMarkerVisible="true">
+        <dc:Bounds x="7525" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1lshqnb_di" bpmnElement="Activity_1lshqnb">
+        <dc:Bounds x="7660" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_03o67wt_di" bpmnElement="Activity_03o67wt">
+        <dc:Bounds x="7500" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1dqfvyy_di" bpmnElement="Activity_1dqfvyy">
+        <dc:Bounds x="7850" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0xlnchg_di" bpmnElement="Activity_0xlnchg">
+        <dc:Bounds x="8060" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0priwji_di" bpmnElement="Gateway_0priwji" isMarkerVisible="true">
+        <dc:Bounds x="8285" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1igpgci_di" bpmnElement="Activity_1igpgci">
+        <dc:Bounds x="8470" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0j0werl_di" bpmnElement="Activity_0j0werl">
+        <dc:Bounds x="8260" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0uq9io4_di" bpmnElement="Activity_0uq9io4">
+        <dc:Bounds x="8660" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_06s2l6d_di" bpmnElement="Activity_06s2l6d">
+        <dc:Bounds x="8850" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0pk2bbu_di" bpmnElement="Activity_0pk2bbu">
+        <dc:Bounds x="9060" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1lpcy0y_di" bpmnElement="Activity_1lpcy0y">
+        <dc:Bounds x="9260" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ouk6om_di" bpmnElement="Activity_1ouk6om">
+        <dc:Bounds x="9460" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_02g0dy5_di" bpmnElement="Event_02g0dy5">
+        <dc:Bounds x="9652" y="240" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0euh4f7_di" bpmnElement="Activity_0euh4f7" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="1360" y="700" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_04gxiqa_di" bpmnElement="Activity_04gxiqa" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="1530" y="850" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_17019v8_di" bpmnElement="Activity_17019v8" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="2040" y="690" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1jd3ay6_di" bpmnElement="Activity_1jd3ay6" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="2040" y="1230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0p6iawa_di" bpmnElement="Gateway_0p6iawa" isMarkerVisible="true" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="1555" y="1245" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1oe9brs_di" bpmnElement="Activity_1oe9brs" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="1530" y="1410" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1e3r9ol_di" bpmnElement="Activity_1e3r9ol" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="1360" y="1230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1bpvi3y_di" bpmnElement="Gateway_1bpvi3y" isMarkerVisible="true" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="2225" y="705" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0vmicul_di" bpmnElement="Activity_0vmicul" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="2200" y="870" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_046fzi1_di" bpmnElement="Gateway_046fzi1" isMarkerVisible="true" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="2225" y="1245" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1mgw70l_di" bpmnElement="Activity_1mgw70l" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="2200" y="1410" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1grvdng_di" bpmnElement="Gateway_1grvdng" isMarkerVisible="true" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="1555" y="715" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0k23yrd_di" bpmnElement="Activity_0k23yrd" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="4990" y="850" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0jlyede_di" bpmnElement="Activity_0jlyede" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="4990" y="1410" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ql63yt_di" bpmnElement="Activity_0ql63yt" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="4820" y="700" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1e3a8cs_di" bpmnElement="Activity_1e3a8cs" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="4820" y="1230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1skqb02_di" bpmnElement="Gateway_1skqb02" isMarkerVisible="true" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="5015" y="715" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1favtgk_di" bpmnElement="Gateway_1favtgk" isMarkerVisible="true" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="5015" y="1245" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_184jhj3_di" bpmnElement="Activity_184jhj3" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="5580" y="790" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0k8r56e_di" bpmnElement="Activity_0k8r56e" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="5580" y="1230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0e28ao5_di" bpmnElement="Gateway_0e28ao5" isMarkerVisible="true" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="5795" y="805" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_15abvim_di" bpmnElement="Activity_15abvim" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="5770" y="950" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1jvx4zn_di" bpmnElement="Activity_1jvx4zn" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="5770" y="1410" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_15kxrc0_di" bpmnElement="Gateway_15kxrc0" isMarkerVisible="true" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="5795" y="1245" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_07q9gmf_di" bpmnElement="Activity_07q9gmf" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="6830" y="700" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ofzbk3_di" bpmnElement="Activity_0ofzbk3" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="6830" y="1230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_07e98va_di" bpmnElement="Activity_07e98va" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="7340" y="700" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_00e403m_di" bpmnElement="Activity_00e403m" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="7340" y="1230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0wno9k9_di" bpmnElement="Gateway_0wno9k9" isMarkerVisible="true" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="7525" y="715" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0mgqzci_di" bpmnElement="Activity_0mgqzci" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="7500" y="850" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0iwv15t_di" bpmnElement="Gateway_0iwv15t" isMarkerVisible="true" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="7525" y="1245" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1h9k1yq_di" bpmnElement="Activity_1h9k1yq" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="7500" y="1410" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0c7mtoc_di" bpmnElement="Activity_0c7mtoc" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="8060" y="690" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1y4aznv_di" bpmnElement="Activity_1y4aznv" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="8060" y="1230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0glwk7v_di" bpmnElement="Gateway_0glwk7v" isMarkerVisible="true" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="8275" y="705" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_14cvcvz_di" bpmnElement="Activity_14cvcvz" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="8250" y="870" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_12mxiyc_di" bpmnElement="Gateway_12mxiyc" isMarkerVisible="true" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="8275" y="1245" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_073j171_di" bpmnElement="Activity_073j171" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="8250" y="1400" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0b63m77_di" bpmnElement="Gateway_0b63m77" isMarkerVisible="true">
+        <dc:Bounds x="725" y="233" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0bp4mif_di" bpmnElement="Gateway_0bp4mif" isMarkerVisible="true">
+        <dc:Bounds x="725" y="335" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0wvq20m_di" bpmnElement="Gateway_0wvq20m" isMarkerVisible="true">
+        <dc:Bounds x="725" y="425" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0891wso_di" bpmnElement="Flow_0891wso">
+        <di:waypoint x="188" y="258" />
+        <di:waypoint x="300" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0c55vbi_di" bpmnElement="Flow_0c55vbi">
+        <di:waypoint x="400" y="258" />
+        <di:waypoint x="510" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0lib5ps_di" bpmnElement="Flow_0lib5ps">
+        <di:waypoint x="560" y="410" />
+        <di:waypoint x="560" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0b6ut2i_di" bpmnElement="Flow_0b6ut2i">
+        <di:waypoint x="1020" y="258" />
+        <di:waypoint x="1080" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_03o565p_di" bpmnElement="Flow_03o565p">
+        <di:waypoint x="1180" y="258" />
+        <di:waypoint x="1230" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13xic1n_di" bpmnElement="Flow_13xic1n">
+        <di:waypoint x="1330" y="258" />
+        <di:waypoint x="1380" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_145xke7_di" bpmnElement="Flow_145xke7">
+        <di:waypoint x="1480" y="258" />
+        <di:waypoint x="1555" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1xd59e5_di" bpmnElement="Flow_1xd59e5">
+        <di:waypoint x="1580" y="283" />
+        <di:waypoint x="1580" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1584" y="334" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_09kyk3s_di" bpmnElement="Flow_09kyk3s">
+        <di:waypoint x="1530" y="430" />
+        <di:waypoint x="1430" y="430" />
+        <di:waypoint x="1430" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_14qa122_di" bpmnElement="Flow_14qa122">
+        <di:waypoint x="1605" y="258" />
+        <di:waypoint x="1680" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1633" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0j2a4dv_di" bpmnElement="Flow_0j2a4dv">
+        <di:waypoint x="1780" y="258" />
+        <di:waypoint x="1860" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1c2h9iq_di" bpmnElement="Flow_1c2h9iq">
+        <di:waypoint x="1960" y="258" />
+        <di:waypoint x="2040" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0059f5f_di" bpmnElement="Flow_0059f5f">
+        <di:waypoint x="2140" y="258" />
+        <di:waypoint x="2225" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0qyodwp_di" bpmnElement="Flow_0qyodwp">
+        <di:waypoint x="2275" y="258" />
+        <di:waypoint x="2360" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2309" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xzqebu_di" bpmnElement="Flow_0xzqebu">
+        <di:waypoint x="2460" y="258" />
+        <di:waypoint x="2550" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1s0xn03_di" bpmnElement="Flow_1s0xn03">
+        <di:waypoint x="2250" y="283" />
+        <di:waypoint x="2250" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2254" y="334" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1gjs6jf_di" bpmnElement="Flow_1gjs6jf">
+        <di:waypoint x="2200" y="430" />
+        <di:waypoint x="2080" y="430" />
+        <di:waypoint x="2080" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_16nm7cf_di" bpmnElement="Flow_16nm7cf">
+        <di:waypoint x="2990" y="258" />
+        <di:waypoint x="3090" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0jsc2vx_di" bpmnElement="Flow_0jsc2vx">
+        <di:waypoint x="3190" y="258" />
+        <di:waypoint x="3290" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1kjbgol_di" bpmnElement="Flow_1kjbgol">
+        <di:waypoint x="3340" y="218" />
+        <di:waypoint x="3340" y="160" />
+        <di:waypoint x="3445" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1umc35h_di" bpmnElement="Flow_1umc35h">
+        <di:waypoint x="3495" y="160" />
+        <di:waypoint x="3600" y="160" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="3539" y="142" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1stcfmh_di" bpmnElement="Flow_1stcfmh">
+        <di:waypoint x="3495" y="258" />
+        <di:waypoint x="3600" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="3539" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0799gty_di" bpmnElement="Flow_0799gty">
+        <di:waypoint x="3495" y="360" />
+        <di:waypoint x="3600" y="360" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="3539" y="342" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_09n3l6l_di" bpmnElement="Flow_09n3l6l">
+        <di:waypoint x="3470" y="185" />
+        <di:waypoint x="3470" y="233" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="3474" y="206" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jl1d3p_di" bpmnElement="Flow_1jl1d3p">
+        <di:waypoint x="3470" y="283" />
+        <di:waypoint x="3470" y="335" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="3474" y="306" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_15jmtm2_di" bpmnElement="Flow_15jmtm2">
+        <di:waypoint x="3700" y="160" />
+        <di:waypoint x="3730" y="160" />
+        <di:waypoint x="3730" y="258" />
+        <di:waypoint x="3800" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1848jab_di" bpmnElement="Flow_1848jab">
+        <di:waypoint x="3700" y="258" />
+        <di:waypoint x="3800" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1daviup_di" bpmnElement="Flow_1daviup">
+        <di:waypoint x="3700" y="360" />
+        <di:waypoint x="3730" y="360" />
+        <di:waypoint x="3730" y="258" />
+        <di:waypoint x="3800" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_103wp1x_di" bpmnElement="Flow_103wp1x">
+        <di:waypoint x="3900" y="258" />
+        <di:waypoint x="3985" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0snb5ah_di" bpmnElement="Flow_0snb5ah">
+        <di:waypoint x="4035" y="258" />
+        <di:waypoint x="4120" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="4069" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1nm4laf_di" bpmnElement="Flow_1nm4laf">
+        <di:waypoint x="4010" y="283" />
+        <di:waypoint x="4010" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="4014" y="324" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_139tpdj_di" bpmnElement="Flow_139tpdj">
+        <di:waypoint x="3960" y="430" />
+        <di:waypoint x="3850" y="430" />
+        <di:waypoint x="3850" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0cj26b1_di" bpmnElement="Flow_0cj26b1">
+        <di:waypoint x="4170" y="218" />
+        <di:waypoint x="4170" y="160" />
+        <di:waypoint x="4305" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_18yooes_di" bpmnElement="Flow_18yooes">
+        <di:waypoint x="4330" y="185" />
+        <di:waypoint x="4330" y="233" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="4327" y="200" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1m49h3o_di" bpmnElement="Flow_1m49h3o">
+        <di:waypoint x="4330" y="283" />
+        <di:waypoint x="4330" y="335" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="4327" y="300" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_04rhzfp_di" bpmnElement="Flow_04rhzfp">
+        <di:waypoint x="4355" y="160" />
+        <di:waypoint x="4490" y="160" />
+        <di:waypoint x="4490" y="218" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="4441" y="142" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_03raq35_di" bpmnElement="Flow_03raq35">
+        <di:waypoint x="4355" y="360" />
+        <di:waypoint x="4490" y="360" />
+        <di:waypoint x="4490" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="4393" y="366" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0lhoipt_di" bpmnElement="Flow_0lhoipt">
+        <di:waypoint x="4355" y="258" />
+        <di:waypoint x="4440" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="4389" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xalkof_di" bpmnElement="Flow_0xalkof">
+        <di:waypoint x="4330" y="385" />
+        <di:waypoint x="4330" y="430" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="4334" y="405" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_15evnqd_di" bpmnElement="Flow_15evnqd">
+        <di:waypoint x="4280" y="500" />
+        <di:waypoint x="3850" y="500" />
+        <di:waypoint x="3850" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jykzpm_di" bpmnElement="Flow_1jykzpm">
+        <di:waypoint x="4540" y="258" />
+        <di:waypoint x="4630" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0x08u5w_di" bpmnElement="Flow_0x08u5w">
+        <di:waypoint x="4730" y="258" />
+        <di:waypoint x="4820" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1qd7ra5_di" bpmnElement="Flow_1qd7ra5">
+        <di:waypoint x="4920" y="258" />
+        <di:waypoint x="5015" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0upwklo_di" bpmnElement="Flow_0upwklo">
+        <di:waypoint x="5065" y="258" />
+        <di:waypoint x="5160" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5104" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0iwesb3_di" bpmnElement="Flow_0iwesb3">
+        <di:waypoint x="5040" y="283" />
+        <di:waypoint x="5040" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5044" y="324" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0rt857m_di" bpmnElement="Flow_0rt857m">
+        <di:waypoint x="4990" y="430" />
+        <di:waypoint x="4870" y="430" />
+        <di:waypoint x="4870" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1bpgg9g_di" bpmnElement="Flow_1bpgg9g">
+        <di:waypoint x="5260" y="258" />
+        <di:waypoint x="5370" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_09koofq_di" bpmnElement="Flow_09koofq">
+        <di:waypoint x="5470" y="258" />
+        <di:waypoint x="5580" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1p69hg7_di" bpmnElement="Flow_1p69hg7">
+        <di:waypoint x="5680" y="258" />
+        <di:waypoint x="5795" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1gstyy0_di" bpmnElement="Flow_1gstyy0">
+        <di:waypoint x="5845" y="258" />
+        <di:waypoint x="5960" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5894" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17chnff_di" bpmnElement="Flow_17chnff">
+        <di:waypoint x="5820" y="283" />
+        <di:waypoint x="5820" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5824" y="324" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1cj9ppg_di" bpmnElement="Flow_1cj9ppg">
+        <di:waypoint x="6060" y="258" />
+        <di:waypoint x="6140" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ij35dw_di" bpmnElement="Flow_1ij35dw">
+        <di:waypoint x="5770" y="430" />
+        <di:waypoint x="5630" y="430" />
+        <di:waypoint x="5630" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0hymame_di" bpmnElement="Flow_0hymame">
+        <di:waypoint x="2650" y="258" />
+        <di:waypoint x="2890" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1wgj3yn_di" bpmnElement="Flow_1wgj3yn">
+        <di:waypoint x="6240" y="258" />
+        <di:waypoint x="6300" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1lybekp_di" bpmnElement="Flow_1lybekp">
+        <di:waypoint x="6400" y="258" />
+        <di:waypoint x="6460" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1aj3qsm_di" bpmnElement="Flow_1aj3qsm">
+        <di:waypoint x="6560" y="258" />
+        <di:waypoint x="6640" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_08v6l74_di" bpmnElement="Flow_08v6l74">
+        <di:waypoint x="6740" y="258" />
+        <di:waypoint x="6830" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_120g44r_di" bpmnElement="Flow_120g44r">
+        <di:waypoint x="6930" y="258" />
+        <di:waypoint x="7000" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1x2no9d_di" bpmnElement="Flow_1x2no9d">
+        <di:waypoint x="7100" y="258" />
+        <di:waypoint x="7160" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0nxi09a_di" bpmnElement="Flow_0nxi09a">
+        <di:waypoint x="7260" y="258" />
+        <di:waypoint x="7340" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1oa361y_di" bpmnElement="Flow_1oa361y">
+        <di:waypoint x="7440" y="258" />
+        <di:waypoint x="7525" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1e5w0s1_di" bpmnElement="Flow_1e5w0s1">
+        <di:waypoint x="7575" y="258" />
+        <di:waypoint x="7660" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="7609" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ig6l4h_di" bpmnElement="Flow_0ig6l4h">
+        <di:waypoint x="7550" y="283" />
+        <di:waypoint x="7550" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="7554" y="384" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ypv5t0_di" bpmnElement="Flow_0ypv5t0">
+        <di:waypoint x="7500" y="430" />
+        <di:waypoint x="7390" y="430" />
+        <di:waypoint x="7390" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0hwtm1f_di" bpmnElement="Flow_0hwtm1f">
+        <di:waypoint x="7760" y="258" />
+        <di:waypoint x="7850" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_09ant2p_di" bpmnElement="Flow_09ant2p">
+        <di:waypoint x="7950" y="258" />
+        <di:waypoint x="8060" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0vbsfe8_di" bpmnElement="Flow_0vbsfe8">
+        <di:waypoint x="8160" y="258" />
+        <di:waypoint x="8285" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_198mqn8_di" bpmnElement="Flow_198mqn8">
+        <di:waypoint x="8335" y="258" />
+        <di:waypoint x="8470" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="8394" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1xc3zpg_di" bpmnElement="Flow_1xc3zpg">
+        <di:waypoint x="8310" y="283" />
+        <di:waypoint x="8310" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="8314" y="340" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1mi6fil_di" bpmnElement="Flow_1mi6fil">
+        <di:waypoint x="8260" y="430" />
+        <di:waypoint x="8110" y="430" />
+        <di:waypoint x="8110" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0yeyy2p_di" bpmnElement="Flow_0yeyy2p">
+        <di:waypoint x="8570" y="258" />
+        <di:waypoint x="8660" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0kmgp86_di" bpmnElement="Flow_0kmgp86">
+        <di:waypoint x="8760" y="258" />
+        <di:waypoint x="8850" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1pqujo7_di" bpmnElement="Flow_1pqujo7">
+        <di:waypoint x="8950" y="258" />
+        <di:waypoint x="9060" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_18f06g1_di" bpmnElement="Flow_18f06g1">
+        <di:waypoint x="9160" y="258" />
+        <di:waypoint x="9260" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ftcvhu_di" bpmnElement="Flow_0ftcvhu">
+        <di:waypoint x="9360" y="258" />
+        <di:waypoint x="9460" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_16z2ffp_di" bpmnElement="Flow_16z2ffp">
+        <di:waypoint x="9560" y="258" />
+        <di:waypoint x="9652" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0x1f94n_di" bpmnElement="Flow_0x1f94n" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="1530" y="890" />
+        <di:waypoint x="1410" y="890" />
+        <di:waypoint x="1410" y="780" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1wplsya_di" bpmnElement="Flow_1wplsya" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="1960" y="258" />
+        <di:waypoint x="2000" y="258" />
+        <di:waypoint x="2000" y="730" />
+        <di:waypoint x="2040" y="730" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_147mvmc_di" bpmnElement="Flow_147mvmc" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="1960" y="258" />
+        <di:waypoint x="1980" y="258" />
+        <di:waypoint x="1980" y="1270" />
+        <di:waypoint x="2040" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_14raj39_di" bpmnElement="Flow_14raj39" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="1580" y="1295" />
+        <di:waypoint x="1580" y="1410" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1577" y="1363" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ius6kc_di" bpmnElement="Flow_0ius6kc" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="1530" y="1450" />
+        <di:waypoint x="1410" y="1450" />
+        <di:waypoint x="1410" y="1310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0y42b3u_di" bpmnElement="Flow_0y42b3u" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="1605" y="1270" />
+        <di:waypoint x="1880" y="1270" />
+        <di:waypoint x="1880" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1886" y="782" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_03j5ipe_di" bpmnElement="Flow_03j5ipe" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="1460" y="1270" />
+        <di:waypoint x="1555" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_00lb5ys_di" bpmnElement="Flow_00lb5ys" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="2140" y="730" />
+        <di:waypoint x="2225" y="730" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_09veouh_di" bpmnElement="Flow_09veouh" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="2250" y="755" />
+        <di:waypoint x="2250" y="870" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2247" y="803" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_09zjvtc_di" bpmnElement="Flow_09zjvtc" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="2200" y="910" />
+        <di:waypoint x="2090" y="910" />
+        <di:waypoint x="2090" y="770" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_14s0qdt_di" bpmnElement="Flow_14s0qdt" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="2140" y="1270" />
+        <di:waypoint x="2225" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17qtm57_di" bpmnElement="Flow_17qtm57" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="2275" y="730" />
+        <di:waypoint x="2600" y="730" />
+        <di:waypoint x="2600" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2606" y="512" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0f2dcgd_di" bpmnElement="Flow_0f2dcgd" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="2275" y="1270" />
+        <di:waypoint x="2940" y="1270" />
+        <di:waypoint x="2940" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2946" y="782" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ee2dm5_di" bpmnElement="Flow_1ee2dm5" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="2250" y="1295" />
+        <di:waypoint x="2250" y="1410" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2247" y="1343" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ch7ot8_di" bpmnElement="Flow_0ch7ot8" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="2200" y="1450" />
+        <di:waypoint x="2090" y="1450" />
+        <di:waypoint x="2090" y="1310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17ickqj_di" bpmnElement="Flow_17ickqj" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="1460" y="740" />
+        <di:waypoint x="1555" y="740" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1twgmmn_di" bpmnElement="Flow_1twgmmn" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="1580" y="765" />
+        <di:waypoint x="1580" y="850" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1584" y="805" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_16opq5y_di" bpmnElement="Flow_16opq5y" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="1605" y="740" />
+        <di:waypoint x="1800" y="740" />
+        <di:waypoint x="1800" y="280" />
+        <di:waypoint x="1860" y="280" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1806" y="508" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ugd1u9_di" bpmnElement="Flow_1ugd1u9" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="4920" y="740" />
+        <di:waypoint x="5015" y="740" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1dnkxco_di" bpmnElement="Flow_1dnkxco" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="5040" y="765" />
+        <di:waypoint x="5040" y="850" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5044" y="805" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0f42syt_di" bpmnElement="Flow_0f42syt" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="4990" y="890" />
+        <di:waypoint x="4870" y="890" />
+        <di:waypoint x="4870" y="780" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1tzwbgo_di" bpmnElement="Flow_1tzwbgo" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="5065" y="740" />
+        <di:waypoint x="5320" y="740" />
+        <di:waypoint x="5320" y="280" />
+        <di:waypoint x="5370" y="280" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5326" y="508" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0d0iok7_di" bpmnElement="Flow_0d0iok7" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="4920" y="1270" />
+        <di:waypoint x="5015" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1gob178_di" bpmnElement="Flow_1gob178" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="5040" y="1295" />
+        <di:waypoint x="5040" y="1410" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5009" y="1335" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1uqgnjm_di" bpmnElement="Flow_1uqgnjm" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="4990" y="1450" />
+        <di:waypoint x="4870" y="1450" />
+        <di:waypoint x="4870" y="1310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0mprqfl_di" bpmnElement="Flow_0mprqfl" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="5065" y="1270" />
+        <di:waypoint x="5420" y="1270" />
+        <di:waypoint x="5420" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5426" y="781" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_07sor2a_di" bpmnElement="Flow_07sor2a" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="5470" y="258" />
+        <di:waypoint x="5525" y="258" />
+        <di:waypoint x="5525" y="810" />
+        <di:waypoint x="5580" y="810" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1085mz7_di" bpmnElement="Flow_1085mz7" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="5470" y="258" />
+        <di:waypoint x="5490" y="258" />
+        <di:waypoint x="5490" y="1270" />
+        <di:waypoint x="5580" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0h8x9pa_di" bpmnElement="Flow_0h8x9pa" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="5680" y="830" />
+        <di:waypoint x="5795" y="830" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13562a3_di" bpmnElement="Flow_13562a3" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="5680" y="1270" />
+        <di:waypoint x="5795" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1y109ks_di" bpmnElement="Flow_1y109ks" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="5820" y="1295" />
+        <di:waypoint x="5820" y="1410" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5824" y="1350" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17dry30_di" bpmnElement="Flow_17dry30" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="5770" y="1450" />
+        <di:waypoint x="5630" y="1450" />
+        <di:waypoint x="5630" y="1310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_170cm60_di" bpmnElement="Flow_170cm60" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="5820" y="855" />
+        <di:waypoint x="5820" y="950" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="5824" y="900" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1qjdpxd_di" bpmnElement="Flow_1qjdpxd" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="5770" y="990" />
+        <di:waypoint x="5630" y="990" />
+        <di:waypoint x="5630" y="870" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_175tlsm_di" bpmnElement="Flow_175tlsm" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="5845" y="830" />
+        <di:waypoint x="6080" y="830" />
+        <di:waypoint x="6080" y="290" />
+        <di:waypoint x="6141" y="290" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="6086" y="558" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0o0d7zg_di" bpmnElement="Flow_0o0d7zg" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="5845" y="1270" />
+        <di:waypoint x="6510" y="1270" />
+        <di:waypoint x="6510" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="6516" y="782" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xvkn3o_di" bpmnElement="Flow_0xvkn3o" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="4730" y="258" />
+        <di:waypoint x="4775" y="258" />
+        <di:waypoint x="4775" y="740" />
+        <di:waypoint x="4820" y="740" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1nuw9cf_di" bpmnElement="Flow_1nuw9cf" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="4730" y="258" />
+        <di:waypoint x="4740" y="258" />
+        <di:waypoint x="4740" y="1270" />
+        <di:waypoint x="4820" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13il5do_di" bpmnElement="Flow_13il5do" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="6740" y="258" />
+        <di:waypoint x="6785" y="258" />
+        <di:waypoint x="6785" y="740" />
+        <di:waypoint x="6830" y="740" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0yzf1x0_di" bpmnElement="Flow_0yzf1x0" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="6740" y="258" />
+        <di:waypoint x="6760" y="258" />
+        <di:waypoint x="6760" y="1270" />
+        <di:waypoint x="6830" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_07mpm5f_di" bpmnElement="Flow_07mpm5f" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="6930" y="740" />
+        <di:waypoint x="7120" y="740" />
+        <di:waypoint x="7120" y="288" />
+        <di:waypoint x="7160" y="288" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0oktm92_di" bpmnElement="Flow_0oktm92" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="6930" y="1270" />
+        <di:waypoint x="7210" y="1270" />
+        <di:waypoint x="7210" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0pqgn0f_di" bpmnElement="Flow_0pqgn0f" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="7260" y="258" />
+        <di:waypoint x="7300" y="258" />
+        <di:waypoint x="7300" y="740" />
+        <di:waypoint x="7340" y="740" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0riij1p_di" bpmnElement="Flow_0riij1p" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="7440" y="740" />
+        <di:waypoint x="7525" y="740" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1t024mn_di" bpmnElement="Flow_1t024mn" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="7550" y="765" />
+        <di:waypoint x="7550" y="850" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="7547" y="798" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0yejyl3_di" bpmnElement="Flow_0yejyl3" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="7500" y="890" />
+        <di:waypoint x="7390" y="890" />
+        <di:waypoint x="7390" y="780" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0lar16o_di" bpmnElement="Flow_0lar16o" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="7575" y="740" />
+        <di:waypoint x="7770" y="740" />
+        <di:waypoint x="7770" y="288" />
+        <di:waypoint x="7850" y="288" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="7776" y="514" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0kphv87_di" bpmnElement="Flow_0kphv87" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="7260" y="258" />
+        <di:waypoint x="7270" y="258" />
+        <di:waypoint x="7270" y="1270" />
+        <di:waypoint x="7340" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0y6isso_di" bpmnElement="Flow_0y6isso" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="7440" y="1270" />
+        <di:waypoint x="7525" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0e0vhgb_di" bpmnElement="Flow_0e0vhgb" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="7550" y="1295" />
+        <di:waypoint x="7550" y="1410" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="7547" y="1343" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1icmrsu_di" bpmnElement="Flow_1icmrsu" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="7500" y="1450" />
+        <di:waypoint x="7380" y="1450" />
+        <di:waypoint x="7380" y="1310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0y6vwau_di" bpmnElement="Flow_0y6vwau" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="7575" y="1270" />
+        <di:waypoint x="7900" y="1270" />
+        <di:waypoint x="7900" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="7906" y="782" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0vuy8yj_di" bpmnElement="Flow_0vuy8yj" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="7950" y="258" />
+        <di:waypoint x="8005" y="258" />
+        <di:waypoint x="8005" y="710" />
+        <di:waypoint x="8060" y="710" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_145driy_di" bpmnElement="Flow_145driy" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="7950" y="258" />
+        <di:waypoint x="7980" y="258" />
+        <di:waypoint x="7980" y="1270" />
+        <di:waypoint x="8060" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1cr53g4_di" bpmnElement="Flow_1cr53g4" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="8160" y="730" />
+        <di:waypoint x="8275" y="730" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xx7dwf_di" bpmnElement="Flow_0xx7dwf" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="8325" y="730" />
+        <di:waypoint x="8620" y="730" />
+        <di:waypoint x="8620" y="290" />
+        <di:waypoint x="8661" y="290" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="8626" y="508" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_01q8leo_di" bpmnElement="Flow_01q8leo" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="8300" y="755" />
+        <di:waypoint x="8300" y="870" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="8297" y="803" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0vm26za_di" bpmnElement="Flow_0vm26za" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="8250" y="910" />
+        <di:waypoint x="8110" y="910" />
+        <di:waypoint x="8110" y="770" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1fwhx8m_di" bpmnElement="Flow_1fwhx8m" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="8160" y="1270" />
+        <di:waypoint x="8275" y="1270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_12xelim_di" bpmnElement="Flow_12xelim" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="8325" y="1270" />
+        <di:waypoint x="9120" y="1270" />
+        <di:waypoint x="9120" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="9126" y="782" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xbt5ta_di" bpmnElement="Flow_0xbt5ta" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="8300" y="1295" />
+        <di:waypoint x="8300" y="1400" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="8300" y="1341" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1mvmt0t_di" bpmnElement="Flow_1mvmt0t" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="8250" y="1440" />
+        <di:waypoint x="8110" y="1440" />
+        <di:waypoint x="8110" y="1310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xke3ex_di" bpmnElement="Flow_0xke3ex" bioc:stroke="#0d4372" color:border-color="#0d4372">
+        <di:waypoint x="1330" y="258" />
+        <di:waypoint x="1345" y="258" />
+        <di:waypoint x="1345" y="720" />
+        <di:waypoint x="1360" y="720" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ggeu0d_di" bpmnElement="Flow_0ggeu0d" bioc:stroke="#205022" color:border-color="#205022">
+        <di:waypoint x="1310" y="298" />
+        <di:waypoint x="1310" y="1250" />
+        <di:waypoint x="1360" y="1250" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0dpnclf_di" bpmnElement="Flow_0dpnclf">
+        <di:waypoint x="610" y="258" />
+        <di:waypoint x="725" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0rfk0qh_di" bpmnElement="Flow_0rfk0qh">
+        <di:waypoint x="775" y="258" />
+        <di:waypoint x="920" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="838" y="240" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1kxg50m_di" bpmnElement="Flow_1kxg50m">
+        <di:waypoint x="750" y="283" />
+        <di:waypoint x="750" y="335" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="754" y="298" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_11wcj33_di" bpmnElement="Flow_11wcj33">
+        <di:waypoint x="775" y="360" />
+        <di:waypoint x="970" y="360" />
+        <di:waypoint x="970" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1016" y="315" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0sbtmtn_di" bpmnElement="Flow_0sbtmtn">
+        <di:waypoint x="750" y="385" />
+        <di:waypoint x="750" y="425" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="747" y="395" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_173s81o_di" bpmnElement="Flow_173s81o">
+        <di:waypoint x="775" y="450" />
+        <di:waypoint x="970" y="450" />
+        <di:waypoint x="970" y="298" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="976" y="372" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_198ki2j_di" bpmnElement="Flow_198ki2j">
+        <di:waypoint x="725" y="450" />
+        <di:waypoint x="610" y="450" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="689" y="460" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

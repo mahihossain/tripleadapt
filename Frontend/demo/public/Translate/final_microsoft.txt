@@ -1,0 +1,10 @@
+Zu Beginn des Evaluation_Gebaeudeeinsturz Modells wird die Fahrzeugaufstellung festgelegt.
+Es werden mindestens einer der folgenden Pfade ausgeführt: 
+	- In Pfad 1.1 werden die Erkundung und erste Maßnahmen durchgeführt.
+	- In Trasse 1.2 wird die Betriebssteuerung durch den Triebfahrzeugführer eingerichtet.
+	Von den folgenden Pfaden in Pfad 1.2 werden einer oder mehrere ausgeführt: 
+		- In Pfad 2.1 wird die Suche und Rettung aller Trupps eingeleitet.
+		- Auf den anderen Wegen bringt der Gruppenleiter Ordnung in den Raum, schimpft mit der Wasserversorgung oder schimpft mit der Strom-/Gasversorgung.
+	- Dann, in Pfad 1.2, führen die All Squads die Rettung durch, untersuchen Überlebensräume und führen Maßnahmen durch.
+	- Dann wird in Pfad 1.2 Gebäudeeinsturzszenario durch den Lokführer abgesenkt.
+Am Ende des Modells wird das Szenario des Gebäudeeinsturzes entwässert.

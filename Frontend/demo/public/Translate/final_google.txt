@@ -1,0 +1,10 @@
+Zu Beginn des Evaluation_Building-Einsturzmodells wird die Fahrzeugpositionierung bestimmt.
+Einer oder mehrere der folgenden Pfade werden ausgeführt:
+- Im Pfad 1.1 werden die Aufklärung & erste Maßnahmen durchgeführt.
+- Im Weg 1.2 wird die Betriebsführung durch den Triebfahrzeugführer eingerichtet.
+Einer oder mehrere der folgenden Pfade in Pfad 1.2 werden ausgeführt:
+– In Pfad 2.1 werden Such- und Rettungseinsätze von allen Trupps eingeleitet.
+- Auf den anderen Wegen organisiert der Gruppenleiter den Raum, stellt die Wasserversorgung ab oder schaltet die Strom-/Gasversorgung ab.
+- Anschließend wird im Pfad 1.2 die Rettung durch alle Trupps durchgeführt, Überlebensbereiche untersucht und Maßnahmen ergriffen.
+- Dann wird in Pfad 1.2 das Gebäudeeinsturz-Szenario vom Lokführer abgeschlossen.
+Am Ende des Modells ist das Gebäudeeinsturzszenario abgeschlossen.

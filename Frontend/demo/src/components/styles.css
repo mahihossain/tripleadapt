@@ -1,0 +1,17 @@
+.active {
+    background-color: #A9A9F5;
+}
+
+.tools {
+    font-size: 15px;
+}
+
+toolname {
+    font-size: 35px;
+    margin-right: 40px;
+}
+
+toolsize {
+    margin-left: auto;
+    margin-right: 0px;
+}

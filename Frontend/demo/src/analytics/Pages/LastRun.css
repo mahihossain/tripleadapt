@@ -1,0 +1,64 @@
+.lastDataContainer {
+    position: absolute;
+    left: 15%;
+    top: 9%;
+    width: 85%;
+    height: 90%;
+}
+
+.TimeHistogram {
+    position: absolute;
+    left: 0.5%;
+    top: 0%;
+    width: 83%;
+    height: 28%;
+    background-color: white;
+
+}
+
+.FailureHistogram {
+    position: absolute;
+    left: 0.5%;
+    top: 0%;
+    width: 83%;
+    height: 28%;
+    background-color: white;
+
+}
+
+.ScoreHistogram {
+    position: absolute;
+    left: 0.5%;
+    top: 0%;
+    width: 83%;
+    height: 28%;
+    background-color: white;    
+
+}
+
+.ZeitAllgemein{
+    position: absolute!important;
+    right: 0.5%;
+    top: 0%;
+    width: 15.5%;
+    height: 28%;
+
+}
+
+.FehlerAllgemein{
+    position: absolute!important;
+    right: 0.5%;
+    top: 33.5%;
+    width: 15.5%;
+    height: 28%;
+
+}
+
+.ScoreAllgemein{
+    position: absolute!important;
+    right: 0.5%;
+    top: 67%;
+    width: 15.5%;
+    height: 28%;
+
+}

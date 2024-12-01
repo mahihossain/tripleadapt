@@ -1,0 +1,304 @@
+.NavigationBar {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 0%;
+    background-color: none;
+    z-index: 99999999;
+}
+
+.startSimulation {
+    position: absolute;
+    right: 5%;
+    top: 2.5%;
+    text-align: center;
+}
+
+.nextStep {
+    position: absolute;
+    height: 25px;
+    width: 9%;
+    right: 10%;
+    top: 2.5%;
+    text-align: center;
+    background-color: #dcdcdc;
+}
+
+.Profile {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 1.5%;
+    right: 4%;
+    background-color: #bbb;
+    border-radius: 50%;
+    color: black !important;
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.Person {
+    position: absolute;
+    bottom: 2.2%;
+    right: 4%;
+    color: black !important;
+}
+
+.Logout {
+    position: absolute;
+    height: 4%;
+    width: auto;
+    bottom: 2.5%;
+    right: 1%;
+}
+
+.Back {
+    position: absolute;
+    height: 4%;
+    width: auto;
+    bottom: 2.5%;
+    left: 1%;
+    color: black !important;
+}
+
+.Werkbank {
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 30%;
+    font-size: 10px;
+}
+
+.Cylinder {
+    position: absolute;
+    background-color: white;
+    width: 40%;
+    height: 45.5%;
+    right: 10%;
+    top: 30%;
+    font-size: 10px;
+}
+
+.Werkzeuge {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 30%;
+    height: 60%;
+    top: 25%;
+    left: 1%;
+    font-size: 15px;
+}
+
+.Material {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 18%;
+    height: 55%;
+    top: 25%;
+    right: 2%;
+    font-size: 15px;
+}
+
+.Arbeitsschritt {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 50%;
+    height: 10%;
+    top: 0%;
+    left: 25%;
+    font-size: 15px;
+}
+
+.Schwierigkeitsgrad {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 24%;
+    height: 15%;
+    top: 8%;
+    left: 1%;
+    font-size: 15px;
+}
+
+.BlauerSchrauber {
+    position: absolute;
+    background-color: white !important;
+    height: 20%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.GruenerSchrauber {
+    position: absolute;
+    background-color: white !important;
+    height: 20%;
+    width: 100%;
+    top: 21%;
+    left: 0%;
+}
+
+.GrauerSchrauber {
+    position: absolute;
+    background-color: white !important;
+    height: 20%;
+    width: 100%;
+    top: 42%;
+    left: 0%;
+}
+
+.Messschieber {
+    position: absolute;
+    background-color: white !important;
+    height: 20%;
+    width: 100%;
+    top: 63%;
+    left: 0%;
+}
+
+.WerkzeugId {
+    position: absolute;
+    left: 1%;
+    width: 10%;
+    font-size: 12px;
+    padding: 25px 0px 0px 0px;
+}
+
+.WerkzeugPng {
+    position: absolute;
+    background-color: #dcdcdc;
+    left: 20%;
+    top: 10%;
+    width: 16%;
+    height: 80%;
+    text-align: center;
+}
+
+.WerkzeugTxt {
+    position: absolute;
+    left: 40%;
+    width: auto;
+    font-size: 18px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.WerkzeugSize {
+    position: absolute;
+    right: 2%;
+    width: 10%;
+    font-size: 10px;
+    padding: 28px 0;
+    text-align: left;
+}
+
+.MaterialPng {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.MaterialTxt {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 1%;
+    left: 1%;
+    font-size: 10px;
+    color: white;
+}
+
+.abschlussdeckel {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+}
+
+.bundschrauben {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 0%;
+    left: 50.5%;
+    text-align: center;
+}
+
+.kolbenstange {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 33.66%;
+    left: 0%;
+    text-align: center;
+}
+
+.kolbenbaugruppe {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 33.66%;
+    left: 50.5%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mutter {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 67.33%;
+    left: 0%;
+    text-align: center;
+}
+
+.lagerdeckel {
+    position: absolute;
+    background-color: lightcyan;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 49.5%;
+    height: 32.66%;
+    top: 67.33%;
+    left: 50.5%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.Schritt {
+    position: absolute;
+    /* background-color: #dcdcdc; */
+    width: 100%;
+    height: 40%;
+    top: 30%;
+    left: 0%;
+    text-align: center;
+}

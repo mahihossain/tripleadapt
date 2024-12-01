@@ -1,0 +1,57 @@
+.sensordata {
+    position: absolute!important;
+    background-color: white;
+    top: 17.5%;
+    left: 2%;
+    height: 65%!important;
+    width: 55%!important;
+}
+
+.plot {
+    position: absolute!important;
+    background-color: #dcdcdc!important;
+    top: 46%!important;
+    left: 58.9%!important;
+    height: 19em!important;
+    width: 25.75em!important;
+}
+
+.profileStyle_sensor {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 1.5%;
+    right: 4%;
+    background-color: #bbb;
+    border-radius: 50%;
+    color: black !important;
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.logoutStyle_sensor {
+    position: absolute;
+    height: 4%;
+    width: auto;
+    top: 1.5%;
+    right: 1%;
+}
+
+.Back_sensor {
+    position: absolute;
+    height: 4%;
+    width: auto;
+    top: 1%;
+    left: 1%;
+    color: black !important;
+}
+
+.video {
+    position: absolute!important;
+    height: 40%;
+    width: 40%;
+    top: 5%;
+    left: 55%;
+    background-color: #dcdcdc;
+}

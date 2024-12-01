@@ -1,0 +1,45 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    command: flask run --host=0.0.0.0
+    ports:
+    -   "5000:5000"
+    volumes:
+      - .:/Backend
+    networks:
+     - back
+    
+  #react_app:
+  #  container_name: react_app
+  #  image: dockerized-react:latest
+  #  restart: always
+  #  ports:
+  #   - "3000:3000"
+
+  mongodb:
+    image : mongo:3.6
+    container_name: mongodb
+    environment:
+     - PUID=1000
+     - PGID=1000
+    volumes:
+     - /db:/data/db
+    ports:
+     - 27017:27017
+    restart: always
+    networks:
+     - back
+ 
+volumes:
+    db:
+
+networks:
+  back:
+    driver: bridge
+    driver_opts: 
+        com.docker.network.enable_ipv6: "true"
+    ipam:
+     config:
+       - subnet: 172.16.238.0/24
+         gateway: 172.16.238.1

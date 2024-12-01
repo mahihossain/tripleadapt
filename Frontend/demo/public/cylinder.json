@@ -1,0 +1,996 @@
+[{
+  "_id": {
+    "$oid": "6221ef6b52c989ecd8f150e2"
+  },
+  "name": "cylinder.bpmn",
+  "nodes": {
+    "StartEvent_1": {
+      "type": "startEvent",
+      "process": "Process_1",
+      "id": "StartEvent_1",
+      "incoming": [],
+      "outgoing": [
+        "Flow_0j0zucr"
+      ]
+    },
+    "Activity_0h4egt6": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0h4egt6",
+      "name": "Assistenz starten",
+      "incoming": [
+        "Flow_0j0zucr"
+      ],
+      "outgoing": [
+        "Flow_11rencs"
+      ]
+    },
+    "Gateway_0wrzrql": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_0wrzrql",
+      "incoming": [
+        "Flow_1ju5kn1"
+      ],
+      "outgoing": [
+        "Flow_1bdyvzg",
+        "Flow_1hdc2rd"
+      ]
+    },
+    "Activity_0fb5zfa": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0fb5zfa",
+      "name": "Falscher Code",
+      "incoming": [
+        "Flow_1hdc2rd"
+      ],
+      "outgoing": [
+        "Flow_1nv3lie"
+      ]
+    },
+    "Activity_163jhyl": {
+      "type": "serviceTask",
+      "process": "Process_1",
+      "id": "Activity_163jhyl",
+      "name": "Abschlussdeckel entnehmen",
+      "material": "Abschlussdeckel",
+      "implementation": "${environment.services.execute}",
+      "incoming": [
+        "Flow_1bdyvzg"
+      ],
+      "outgoing": [
+        "Flow_19yiucm"
+      ]
+    },
+    "Gateway_0810atn": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_0810atn",
+      "incoming": [
+        "Flow_05ttg33"
+      ],
+      "outgoing": [
+        "Flow_0lkczvv",
+        "Flow_0mugo2q"
+      ]
+    },
+    "Activity_0pwu48b": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0pwu48b",
+      "name": "Abschlussdeckel aufsetzen",
+      "incoming": [
+        "Flow_0lkczvv"
+      ],
+      "outgoing": [
+        "Flow_01fyyuf"
+      ]
+    },
+    "Activity_1patann": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1patann",
+      "name": "Falscher Pick",
+      "incoming": [
+        "Flow_0mugo2q"
+      ],
+      "outgoing": [
+        "Flow_1fzrf98"
+      ]
+    },
+    "Activity_1fhbots": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1fhbots",
+      "name": "Abschlussdeckel bereitlegen",
+      "incoming": [
+        "Flow_19yiucm",
+        "Flow_1fzrf98"
+      ],
+      "outgoing": [
+        "Flow_05ttg33"
+      ]
+    },
+    "Activity_0lasejm": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0lasejm",
+      "name": "Code scannen",
+      "incoming": [
+        "Flow_11rencs",
+        "Flow_1nv3lie"
+      ],
+      "outgoing": [
+        "Flow_1ju5kn1"
+      ]
+    },
+    "Activity_1e0vhv7": {
+      "type": "serviceTask",
+      "process": "Process_1",
+      "id": "Activity_1e0vhv7",
+      "name": "Bundschrauben entnehmen",
+      "implementation": "${environment.services.execute}",
+      "incoming": [
+        "Flow_01fyyuf"
+      ],
+      "outgoing": [
+        "Flow_1hlvosg"
+      ]
+    },
+    "Activity_1lechr5": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1lechr5",
+      "name": "Bundschrauben entnehmen",
+      "incoming": [
+        "Flow_1hlvosg",
+        "Flow_0jn1lnc"
+      ],
+      "outgoing": [
+        "Flow_1x6kir4"
+      ]
+    },
+    "Gateway_08r2lg6": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_08r2lg6",
+      "incoming": [
+        "Flow_1x6kir4"
+      ],
+      "outgoing": [
+        "Flow_12m6cgu",
+        "Flow_1ko8zyp"
+      ]
+    },
+    "Activity_1ej4m33": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1ej4m33",
+      "name": "Bundschrauben einsetzen",
+      "incoming": [
+        "Flow_12m6cgu"
+      ],
+      "outgoing": [
+        "Flow_07p7j3q"
+      ]
+    },
+    "Activity_1epxwwn": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1epxwwn",
+      "name": "Falscher Pick",
+      "incoming": [
+        "Flow_1ko8zyp"
+      ],
+      "outgoing": [
+        "Flow_0jn1lnc"
+      ]
+    },
+    "Activity_02edt2c": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_02edt2c",
+      "name": "Blauen Schrauber nehmen",
+      "incoming": [
+        "Flow_07p7j3q",
+        "Flow_1trtf94"
+      ],
+      "outgoing": [
+        "Flow_01bgam4"
+      ]
+    },
+    "Gateway_1frm0oe": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_1frm0oe",
+      "incoming": [
+        "Flow_01bgam4"
+      ],
+      "outgoing": [
+        "Flow_1lxx7ho",
+        "Flow_1e7fgb6"
+      ]
+    },
+    "Activity_06jmsg8": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_06jmsg8",
+      "name": "Kolbenstange bereitlegen",
+      "incoming": [
+        "Flow_00egs36",
+        "Flow_0cfzxzf",
+        "Flow_1bm4hc7"
+      ],
+      "outgoing": [
+        "Flow_02qgtv1"
+      ]
+    },
+    "Activity_1vygm9n": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1vygm9n",
+      "name": "falscher Schrauber",
+      "incoming": [
+        "Flow_1lxx7ho"
+      ],
+      "outgoing": [
+        "Flow_1trtf94"
+      ]
+    },
+    "Activity_037gp20": {
+      "type": "serviceTask",
+      "process": "Process_1",
+      "id": "Activity_037gp20",
+      "name": "Kolbenstange bereitlegen",
+      "implementation": "${environment.services.execute}",
+      "incoming": [
+        "Flow_1e7fgb6"
+      ],
+      "outgoing": [
+        "Flow_00egs36"
+      ]
+    },
+    "Gateway_1s0b1hr": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_1s0b1hr",
+      "incoming": [
+        "Flow_02qgtv1"
+      ],
+      "outgoing": [
+        "Flow_0gt6359",
+        "Flow_1k0lw7n"
+      ]
+    },
+    "Activity_1pv3djb": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1pv3djb",
+      "name": "Kolbenstange messen",
+      "incoming": [
+        "Flow_0gt6359"
+      ],
+      "outgoing": [
+        "Flow_1ub4xyw"
+      ]
+    },
+    "Activity_1sruu4d": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1sruu4d",
+      "name": "Falscher Pick",
+      "incoming": [
+        "Flow_1k0lw7n"
+      ],
+      "outgoing": [
+        "Flow_0cfzxzf"
+      ]
+    },
+    "Gateway_1rwrpr4": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_1rwrpr4",
+      "incoming": [
+        "Flow_1ub4xyw"
+      ],
+      "outgoing": [
+        "Flow_14sr1bg",
+        "Flow_151eyux"
+      ]
+    },
+    "Activity_06zvj0k": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_06zvj0k",
+      "name": "Kolbenstange ok",
+      "incoming": [
+        "Flow_14sr1bg"
+      ],
+      "outgoing": [
+        "Flow_1g0h48a"
+      ]
+    },
+    "Activity_1fjlefr": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1fjlefr",
+      "name": "Kolbenstange nicht ok",
+      "incoming": [
+        "Flow_151eyux"
+      ],
+      "outgoing": [
+        "Flow_1bm4hc7"
+      ]
+    },
+    "Activity_19eo8f7": {
+      "type": "serviceTask",
+      "process": "Process_1",
+      "id": "Activity_19eo8f7",
+      "name": "Kolbenbaugruppe bereitlegen",
+      "implementation": "${environment.services.execute}",
+      "incoming": [
+        "Flow_1g0h48a"
+      ],
+      "outgoing": [
+        "Flow_16yh9wn"
+      ]
+    },
+    "Activity_1w91x1n": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1w91x1n",
+      "name": "Kolbenbaugruppe bereitlegen",
+      "incoming": [
+        "Flow_16yh9wn",
+        "Flow_0uu59je"
+      ],
+      "outgoing": [
+        "Flow_0z2op5b"
+      ]
+    },
+    "Gateway_02k5kob": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_02k5kob",
+      "incoming": [
+        "Flow_0z2op5b"
+      ],
+      "outgoing": [
+        "Flow_0d63h0d",
+        "Flow_0onjjd4"
+      ]
+    },
+    "Activity_16ov66f": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_16ov66f",
+      "name": "Kolbenbaugruppe aufstecken",
+      "incoming": [
+        "Flow_0d63h0d"
+      ],
+      "outgoing": [
+        "Flow_0g5fd05"
+      ]
+    },
+    "Activity_08lfd67": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_08lfd67",
+      "name": "Falscher Pick",
+      "incoming": [
+        "Flow_0onjjd4"
+      ],
+      "outgoing": [
+        "Flow_0uu59je"
+      ]
+    },
+    "Activity_06bbvcq": {
+      "type": "serviceTask",
+      "process": "Process_1",
+      "id": "Activity_06bbvcq",
+      "name": "Mutter bereitlegen",
+      "implementation": "${environment.services.execute}",
+      "incoming": [
+        "Flow_0g5fd05"
+      ],
+      "outgoing": [
+        "Flow_11h0nsa"
+      ]
+    },
+    "Activity_1743p26": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1743p26",
+      "name": "Mutter bereitlegen",
+      "incoming": [
+        "Flow_11h0nsa",
+        "Flow_06v8x9w"
+      ],
+      "outgoing": [
+        "Flow_15851el"
+      ]
+    },
+    "Gateway_13osmkc": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_13osmkc",
+      "incoming": [
+        "Flow_15851el"
+      ],
+      "outgoing": [
+        "Flow_1k54qlz",
+        "Flow_1i3nrb8"
+      ]
+    },
+    "Activity_0iyarnz": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0iyarnz",
+      "name": "Mutter aufdrehen",
+      "incoming": [
+        "Flow_1k54qlz"
+      ],
+      "outgoing": [
+        "Flow_03o3fdl"
+      ]
+    },
+    "Activity_1c35jk8": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1c35jk8",
+      "name": "Falscher Pick",
+      "incoming": [
+        "Flow_1i3nrb8"
+      ],
+      "outgoing": [
+        "Flow_06v8x9w"
+      ]
+    },
+    "Activity_0bi7ljz": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0bi7ljz",
+      "name": "Grauen Schrauber nehmen",
+      "incoming": [
+        "Flow_03o3fdl",
+        "Flow_0n0809v"
+      ],
+      "outgoing": [
+        "Flow_1284vw5"
+      ]
+    },
+    "Gateway_1fkg0bz": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_1fkg0bz",
+      "incoming": [
+        "Flow_1284vw5"
+      ],
+      "outgoing": [
+        "Flow_1c2cnyk",
+        "Flow_1x0v8s1"
+      ]
+    },
+    "Activity_0dkrmq3": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0dkrmq3",
+      "name": "Mutter festdrehen",
+      "incoming": [
+        "Flow_1c2cnyk"
+      ],
+      "outgoing": [
+        "Flow_19rkxvx"
+      ]
+    },
+    "Activity_09auwdt": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_09auwdt",
+      "name": "Falscher Schrauber",
+      "incoming": [
+        "Flow_1x0v8s1"
+      ],
+      "outgoing": [
+        "Flow_0n0809v"
+      ]
+    },
+    "Activity_15hk5qa": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_15hk5qa",
+      "name": "Vorbereiten",
+      "incoming": [
+        "Flow_19rkxvx"
+      ],
+      "outgoing": [
+        "Flow_0udewxb"
+      ]
+    },
+    "Activity_0agmvsl": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0agmvsl",
+      "name": "Kolbenstangenbaugruppe einsetzen",
+      "incoming": [
+        "Flow_0udewxb"
+      ],
+      "outgoing": [
+        "Flow_1pycegd"
+      ]
+    },
+    "Activity_1hl5lci": {
+      "type": "serviceTask",
+      "process": "Process_1",
+      "id": "Activity_1hl5lci",
+      "name": "Lagerdeckel entnehmen",
+      "implementation": "${environment.services.execute}",
+      "incoming": [
+        "Flow_1pycegd"
+      ],
+      "outgoing": [
+        "Flow_1wdx4kr"
+      ]
+    },
+    "Activity_0urkou2": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0urkou2",
+      "name": "Lagerdeckel entnehmen",
+      "incoming": [
+        "Flow_1wdx4kr",
+        "Flow_17asap6"
+      ],
+      "outgoing": [
+        "Flow_18kvbk5"
+      ]
+    },
+    "Gateway_0zne5ca": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_0zne5ca",
+      "incoming": [
+        "Flow_18kvbk5"
+      ],
+      "outgoing": [
+        "Flow_1fn3t5w",
+        "Flow_144djya"
+      ]
+    },
+    "Activity_0swniv4": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0swniv4",
+      "name": "Lagerdeckel aufsetzen",
+      "incoming": [
+        "Flow_1fn3t5w"
+      ],
+      "outgoing": [
+        "Flow_1xfo8t2"
+      ]
+    },
+    "Activity_0oqd4w8": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0oqd4w8",
+      "name": "Falscher Pick",
+      "incoming": [
+        "Flow_144djya"
+      ],
+      "outgoing": [
+        "Flow_17asap6"
+      ]
+    },
+    "Activity_17xv760": {
+      "type": "serviceTask",
+      "process": "Process_1",
+      "id": "Activity_17xv760",
+      "name": "Bundschrauben bereitlegen",
+      "implementation": "${environment.services.execute}",
+      "incoming": [
+        "Flow_1xfo8t2"
+      ],
+      "outgoing": [
+        "Flow_1kf20gd"
+      ]
+    },
+    "Activity_12bu85k": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_12bu85k",
+      "name": "Bundschrauben bereitlegen",
+      "incoming": [
+        "Flow_1kf20gd",
+        "Flow_1g0gjca"
+      ],
+      "outgoing": [
+        "Flow_0yg7f0w"
+      ]
+    },
+    "Gateway_1e91i36": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_1e91i36",
+      "incoming": [
+        "Flow_0yg7f0w"
+      ],
+      "outgoing": [
+        "Flow_1mv8yja",
+        "Flow_10rhkex"
+      ]
+    },
+    "Activity_1snehqw": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1snehqw",
+      "name": "Bundschrauben einsetzen",
+      "incoming": [
+        "Flow_1mv8yja"
+      ],
+      "outgoing": [
+        "Flow_1pdptqv"
+      ]
+    },
+    "Activity_1rmtv39": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1rmtv39",
+      "name": "Falscher Pick",
+      "incoming": [
+        "Flow_10rhkex"
+      ],
+      "outgoing": [
+        "Flow_1g0gjca"
+      ]
+    },
+    "Activity_0npz5kt": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0npz5kt",
+      "name": "Blauen Schrauber nehmen",
+      "incoming": [
+        "Flow_1pdptqv",
+        "Flow_1wd8h3n"
+      ],
+      "outgoing": [
+        "Flow_1ldf6aq"
+      ]
+    },
+    "Gateway_0lznnt8": {
+      "type": "exclusiveGateway",
+      "process": "Process_1",
+      "id": "Gateway_0lznnt8",
+      "incoming": [
+        "Flow_1ldf6aq"
+      ],
+      "outgoing": [
+        "Flow_1wfyj0k",
+        "Flow_1jjhme0"
+      ]
+    },
+    "Activity_1t3xlk0": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_1t3xlk0",
+      "name": "Bundschrauben festdrehen",
+      "incoming": [
+        "Flow_1wfyj0k"
+      ],
+      "outgoing": [
+        "Flow_0sifeo0"
+      ]
+    },
+    "Activity_0zjh999": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0zjh999",
+      "name": "Falscher Schrauber",
+      "incoming": [
+        "Flow_1jjhme0"
+      ],
+      "outgoing": [
+        "Flow_1wd8h3n"
+      ]
+    },
+    "Activity_0a7w4ip": {
+      "type": "userTask",
+      "process": "Process_1",
+      "id": "Activity_0a7w4ip",
+      "name": "Assistenz erfolgreich abgeschlossen",
+      "incoming": [
+        "Flow_0sifeo0"
+      ],
+      "outgoing": [
+        "Flow_0csxcvy"
+      ]
+    },
+    "Event_0b4mxb9": {
+      "type": "endEvent",
+      "process": "Process_1",
+      "id": "Event_0b4mxb9",
+      "incoming": [
+        "Flow_0csxcvy"
+      ],
+      "outgoing": []
+    }
+  },
+  "edges": [
+    {
+      "from": "StartEvent_1",
+      "to": "Activity_0h4egt6"
+    },
+    {
+      "from": "Activity_0h4egt6",
+      "to": "Activity_0lasejm"
+    },
+    {
+      "from": "Gateway_0wrzrql",
+      "to": "Activity_163jhyl"
+    },
+    {
+      "from": "Gateway_0wrzrql",
+      "to": "Activity_0fb5zfa"
+    },
+    {
+      "from": "Activity_0fb5zfa",
+      "to": "Activity_0lasejm"
+    },
+    {
+      "from": "Activity_163jhyl",
+      "to": "Activity_1fhbots"
+    },
+    {
+      "from": "Gateway_0810atn",
+      "to": "Activity_0pwu48b"
+    },
+    {
+      "from": "Gateway_0810atn",
+      "to": "Activity_1patann"
+    },
+    {
+      "from": "Activity_0pwu48b",
+      "to": "Activity_1e0vhv7"
+    },
+    {
+      "from": "Activity_1patann",
+      "to": "Activity_1fhbots"
+    },
+    {
+      "from": "Activity_1fhbots",
+      "to": "Gateway_0810atn"
+    },
+    {
+      "from": "Activity_0lasejm",
+      "to": "Gateway_0wrzrql"
+    },
+    {
+      "from": "Activity_1e0vhv7",
+      "to": "Activity_1lechr5"
+    },
+    {
+      "from": "Activity_1lechr5",
+      "to": "Gateway_08r2lg6"
+    },
+    {
+      "from": "Gateway_08r2lg6",
+      "to": "Activity_1ej4m33"
+    },
+    {
+      "from": "Gateway_08r2lg6",
+      "to": "Activity_1epxwwn"
+    },
+    {
+      "from": "Activity_1ej4m33",
+      "to": "Activity_02edt2c"
+    },
+    {
+      "from": "Activity_1epxwwn",
+      "to": "Activity_1lechr5"
+    },
+    {
+      "from": "Activity_02edt2c",
+      "to": "Gateway_1frm0oe"
+    },
+    {
+      "from": "Gateway_1frm0oe",
+      "to": "Activity_1vygm9n"
+    },
+    {
+      "from": "Gateway_1frm0oe",
+      "to": "Activity_037gp20"
+    },
+    {
+      "from": "Activity_06jmsg8",
+      "to": "Gateway_1s0b1hr"
+    },
+    {
+      "from": "Activity_1vygm9n",
+      "to": "Activity_02edt2c"
+    },
+    {
+      "from": "Activity_037gp20",
+      "to": "Activity_06jmsg8"
+    },
+    {
+      "from": "Gateway_1s0b1hr",
+      "to": "Activity_1pv3djb"
+    },
+    {
+      "from": "Gateway_1s0b1hr",
+      "to": "Activity_1sruu4d"
+    },
+    {
+      "from": "Activity_1pv3djb",
+      "to": "Gateway_1rwrpr4"
+    },
+    {
+      "from": "Activity_1sruu4d",
+      "to": "Activity_06jmsg8"
+    },
+    {
+      "from": "Gateway_1rwrpr4",
+      "to": "Activity_06zvj0k"
+    },
+    {
+      "from": "Gateway_1rwrpr4",
+      "to": "Activity_1fjlefr"
+    },
+    {
+      "from": "Activity_06zvj0k",
+      "to": "Activity_19eo8f7"
+    },
+    {
+      "from": "Activity_1fjlefr",
+      "to": "Activity_06jmsg8"
+    },
+    {
+      "from": "Activity_19eo8f7",
+      "to": "Activity_1w91x1n"
+    },
+    {
+      "from": "Activity_1w91x1n",
+      "to": "Gateway_02k5kob"
+    },
+    {
+      "from": "Gateway_02k5kob",
+      "to": "Activity_16ov66f"
+    },
+    {
+      "from": "Gateway_02k5kob",
+      "to": "Activity_08lfd67"
+    },
+    {
+      "from": "Activity_16ov66f",
+      "to": "Activity_06bbvcq"
+    },
+    {
+      "from": "Activity_08lfd67",
+      "to": "Activity_1w91x1n"
+    },
+    {
+      "from": "Activity_06bbvcq",
+      "to": "Activity_1743p26"
+    },
+    {
+      "from": "Activity_1743p26",
+      "to": "Gateway_13osmkc"
+    },
+    {
+      "from": "Gateway_13osmkc",
+      "to": "Activity_0iyarnz"
+    },
+    {
+      "from": "Gateway_13osmkc",
+      "to": "Activity_1c35jk8"
+    },
+    {
+      "from": "Activity_0iyarnz",
+      "to": "Activity_0bi7ljz"
+    },
+    {
+      "from": "Activity_1c35jk8",
+      "to": "Activity_1743p26"
+    },
+    {
+      "from": "Activity_0bi7ljz",
+      "to": "Gateway_1fkg0bz"
+    },
+    {
+      "from": "Gateway_1fkg0bz",
+      "to": "Activity_0dkrmq3"
+    },
+    {
+      "from": "Gateway_1fkg0bz",
+      "to": "Activity_09auwdt"
+    },
+    {
+      "from": "Activity_0dkrmq3",
+      "to": "Activity_15hk5qa"
+    },
+    {
+      "from": "Activity_09auwdt",
+      "to": "Activity_0bi7ljz"
+    },
+    {
+      "from": "Activity_15hk5qa",
+      "to": "Activity_0agmvsl"
+    },
+    {
+      "from": "Activity_0agmvsl",
+      "to": "Activity_1hl5lci"
+    },
+    {
+      "from": "Activity_1hl5lci",
+      "to": "Activity_0urkou2"
+    },
+    {
+      "from": "Activity_0urkou2",
+      "to": "Gateway_0zne5ca"
+    },
+    {
+      "from": "Gateway_0zne5ca",
+      "to": "Activity_0swniv4"
+    },
+    {
+      "from": "Gateway_0zne5ca",
+      "to": "Activity_0oqd4w8"
+    },
+    {
+      "from": "Activity_0swniv4",
+      "to": "Activity_17xv760"
+    },
+    {
+      "from": "Activity_0oqd4w8",
+      "to": "Activity_0urkou2"
+    },
+    {
+      "from": "Activity_17xv760",
+      "to": "Activity_12bu85k"
+    },
+    {
+      "from": "Activity_12bu85k",
+      "to": "Gateway_1e91i36"
+    },
+    {
+      "from": "Gateway_1e91i36",
+      "to": "Activity_1snehqw"
+    },
+    {
+      "from": "Gateway_1e91i36",
+      "to": "Activity_1rmtv39"
+    },
+    {
+      "from": "Activity_1snehqw",
+      "to": "Activity_0npz5kt"
+    },
+    {
+      "from": "Activity_1rmtv39",
+      "to": "Activity_12bu85k"
+    },
+    {
+      "from": "Activity_0npz5kt",
+      "to": "Gateway_0lznnt8"
+    },
+    {
+      "from": "Gateway_0lznnt8",
+      "to": "Activity_1t3xlk0"
+    },
+    {
+      "from": "Gateway_0lznnt8",
+      "to": "Activity_0zjh999"
+    },
+    {
+      "from": "Activity_1t3xlk0",
+      "to": "Activity_0a7w4ip"
+    },
+    {
+      "from": "Activity_0zjh999",
+      "to": "Activity_0npz5kt"
+    },
+    {
+      "from": "Activity_0a7w4ip",
+      "to": "Event_0b4mxb9"
+    }
+  ]
+}]

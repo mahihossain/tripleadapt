@@ -1,0 +1,1450 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.2.43",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "extensionsRequired" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "M3" : {}
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Zylinder",
+            "scale" : [
+                1,
+                0.8895416855812073,
+                1
+            ],
+            "translation" : [
+                1.3152568340301514,
+                0,
+                0
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Lagerdeckel",
+            "rotation" : [
+                0.01075172983109951,
+                0.7102166414260864,
+                0.7038626074790955,
+                0.007360012270510197
+            ],
+            "scale" : [
+                0.8328741192817688,
+                0.8876888751983643,
+                0.8946760296821594
+            ],
+            "translation" : [
+                -1.626443862915039,
+                -0.008436962962150574,
+                0.07081008702516556
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "mutter",
+            "rotation" : [
+                -0.41112977266311646,
+                -0.3885626494884491,
+                -0.5783320069313049,
+                0.5878124833106995
+            ],
+            "scale" : [
+                -0.021140946075320244,
+                -0.031177183613181114,
+                -0.021134763956069946
+            ],
+            "translation" : [
+                -2.249171495437622,
+                0,
+                -0.04937145859003067
+            ]
+        },
+        {
+            "mesh" : 3,
+            "name" : "kolbenstange",
+            "rotation" : [
+                0.5372602343559265,
+                -0.5287669897079468,
+                0.46504563093185425,
+                0.4642084538936615
+            ],
+            "scale" : [
+                0.030933024361729622,
+                0.030933022499084473,
+                0.030933024361729622
+            ],
+            "translation" : [
+                -1.6786112785339355,
+                0,
+                -0.065781369805336
+            ]
+        },
+        {
+            "mesh" : 4,
+            "name" : "Baugruppe",
+            "scale" : [
+                0.46103817224502563,
+                0.46103817224502563,
+                0.46103817224502563
+            ],
+            "translation" : [
+                -0.04464459419250488,
+                0,
+                0
+            ]
+        },
+        {
+            "mesh" : 5,
+            "name" : "Schraube.002",
+            "rotation" : [
+                0,
+                0,
+                0.6941328048706055,
+                0.7198470234870911
+            ],
+            "scale" : [
+                0.06460721045732498,
+                0.06460721045732498,
+                0.06460721045732498
+            ],
+            "translation" : [
+                -1.5767371654510498,
+                -0.5450789332389832,
+                -0.42239320278167725
+            ]
+        },
+        {
+            "mesh" : 6,
+            "name" : "Schraube.001",
+            "rotation" : [
+                0,
+                0,
+                0.6941328048706055,
+                0.7198470234870911
+            ],
+            "scale" : [
+                0.06259169429540634,
+                0.06259169429540634,
+                0.06259170174598694
+            ],
+            "translation" : [
+                -1.545348882675171,
+                0.48014146089553833,
+                0.5502035617828369
+            ]
+        },
+        {
+            "mesh" : 7,
+            "name" : "Schraube.003",
+            "rotation" : [
+                0,
+                0,
+                -0.69394850730896,
+                0.7200247049331665
+            ],
+            "scale" : [
+                0.06586676836013794,
+                0.06586676836013794,
+                0.06586675345897675
+            ],
+            "translation" : [
+                2.1322689056396484,
+                0.4272606670856476,
+                -0.46234995126724243
+            ]
+        },
+        {
+            "mesh" : 8,
+            "name" : "Schraube.004",
+            "rotation" : [
+                0,
+                0,
+                -0.6939484477043152,
+                0.7200247049331665
+            ],
+            "scale" : [
+                0.06195073947310448,
+                0.06195073947310448,
+                0.06195073947310448
+            ],
+            "translation" : [
+                2.159893035888672,
+                -0.5851005911827087,
+                0.5233036875724792
+            ]
+        },
+        {
+            "extras" : {
+                "M3" : {}
+            },
+            "mesh" : 9,
+            "name" : "Abschlussdeckel",
+            "rotation" : [
+                0.7103140950202942,
+                0.0063956002704799175,
+                -0.0026759584434330463,
+                0.7038507461547852
+            ],
+            "scale" : [
+                0.8970167636871338,
+                0.8970168828964233,
+                0.8970168828964233
+            ],
+            "translation" : [
+                2.2678616046905518,
+                -0.06497412919998169,
+                0.05220487713813782
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "zylinder",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "lagerdeckel",
+            "normalTexture" : {
+                "index" : 3
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 4
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 5
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "middle",
+            "normalTexture" : {
+                "index" : 6
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 7
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 8
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "mutter",
+            "normalTexture" : {
+                "index" : 9
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 10
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 11
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "kolbenstange",
+            "normalTexture" : {
+                "index" : 12
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 13
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 14
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "rot",
+            "normalTexture" : {
+                "index" : 15
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.8000000715255737,
+                    0.011330433189868927,
+                    0.009501035325229168,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "metallicRoughnessTexture" : {
+                    "index" : 16
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "wei\u00df",
+            "normalTexture" : {
+                "index" : 17
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.7760767936706543,
+                    0.8000000715255737,
+                    0.8000000715255737,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "metallicRoughnessTexture" : {
+                    "index" : 18
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "schraubeTwo",
+            "normalTexture" : {
+                "index" : 19
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 20
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 21
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "schraubeOne",
+            "normalTexture" : {
+                "index" : 22
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 23
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 24
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "schraubeThree",
+            "normalTexture" : {
+                "index" : 25
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 26
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 27
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "schraubeFour",
+            "normalTexture" : {
+                "index" : 28
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 29
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 30
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "abschlussdeckel",
+            "normalTexture" : {
+                "index" : 31
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 32
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 33
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "zylinder",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 0,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 3,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "lagerdeckel",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 1,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 7,
+                    "material" : 1,
+                    "mode" : 4
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 2,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 11,
+                    "material" : 2,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "extras" : {
+                "Bolt" : 1,
+                "change" : 0,
+                "bf_Model_Type" : "bf_Model_Nut",
+                "bf_Head_Type" : "bf_Head_Hex",
+                "bf_Bit_Type" : "bf_Bit_None",
+                "bf_Nut_Type" : "bf_Nut_Hex",
+                "bf_Shank_Length" : 33.0,
+                "bf_Shank_Dia" : 12.0,
+                "bf_Phillips_Bit_Depth" : 4.899229526519775,
+                "bf_Allen_Bit_Depth" : 6.0,
+                "bf_Allen_Bit_Flat_Distance" : 10.0,
+                "bf_Torx_Bit_Depth" : 6.0,
+                "bf_Torx_Size_Type" : "bf_Torx_T55",
+                "bf_Hex_Head_Height" : 7.5,
+                "bf_Hex_Head_Flat_Distance" : 19.0,
+                "bf_CounterSink_Head_Dia" : 22.0,
+                "bf_Cap_Head_Height" : 12.0,
+                "bf_Cap_Head_Dia" : 18.5,
+                "bf_Dome_Head_Dia" : 24.0,
+                "bf_Pan_Head_Dia" : 24.0,
+                "bf_Philips_Bit_Dia" : 7.800000190734863,
+                "bf_Thread_Length" : 32.0,
+                "bf_Major_Dia" : 12.0,
+                "bf_Pitch" : 1.5,
+                "bf_Minor_Dia" : 10.376201629638672,
+                "bf_Crest_Percent" : 10,
+                "bf_Root_Percent" : 10,
+                "bf_Div_Count" : 36,
+                "bf_Hex_Nut_Height" : 10.0,
+                "bf_Hex_Nut_Flat_Distance" : 19.0
+            },
+            "name" : "mutter",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 12,
+                        "NORMAL" : 13
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 3,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 14,
+                    "material" : 3,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "kolbenstange",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 15,
+                        "NORMAL" : 16,
+                        "COLOR_0" : 17
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 4,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "COLOR_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 18,
+                    "material" : 4,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "baugruppe",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 19,
+                        "NORMAL" : 20,
+                        "TEXCOORD_0" : 21
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 5,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 22,
+                    "material" : 5,
+                    "mode" : 4
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 23,
+                        "NORMAL" : 24,
+                        "TEXCOORD_0" : 25
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 6,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 26,
+                    "material" : 6,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "extras" : {
+                "Bolt" : 1,
+                "change" : 0,
+                "bf_Model_Type" : "bf_Model_Bolt",
+                "bf_Head_Type" : "bf_Head_Cap",
+                "bf_Bit_Type" : "bf_Bit_Allen",
+                "bf_Nut_Type" : "bf_Nut_Hex",
+                "bf_Shank_Length" : 0.0,
+                "bf_Shank_Dia" : 3.0,
+                "bf_Phillips_Bit_Depth" : 1.1431535482406616,
+                "bf_Allen_Bit_Depth" : 1.5,
+                "bf_Allen_Bit_Flat_Distance" : 2.5,
+                "bf_Torx_Bit_Depth" : 1.5,
+                "bf_Torx_Size_Type" : "bf_Torx_T20",
+                "bf_Hex_Head_Height" : 2.0,
+                "bf_Hex_Head_Flat_Distance" : 5.5,
+                "bf_CounterSink_Head_Dia" : 6.300000190734863,
+                "bf_Cap_Head_Height" : 3.0,
+                "bf_Cap_Head_Dia" : 5.5,
+                "bf_Dome_Head_Dia" : 5.599999904632568,
+                "bf_Pan_Head_Dia" : 5.599999904632568,
+                "bf_Philips_Bit_Dia" : 1.8199999332427979,
+                "bf_Thread_Length" : 6.0,
+                "bf_Major_Dia" : 3.0,
+                "bf_Pitch" : 0.3499999940395355,
+                "bf_Minor_Dia" : 2.6211137771606445,
+                "bf_Crest_Percent" : 10,
+                "bf_Root_Percent" : 10,
+                "bf_Div_Count" : 36,
+                "bf_Hex_Nut_Height" : 2.4000000953674316,
+                "bf_Hex_Nut_Flat_Distance" : 5.5
+            },
+            "name" : "schraube.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 27,
+                        "NORMAL" : 28
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 7,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 29,
+                    "material" : 7,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "extras" : {
+                "Bolt" : 1,
+                "change" : 0,
+                "bf_Model_Type" : "bf_Model_Bolt",
+                "bf_Head_Type" : "bf_Head_Cap",
+                "bf_Bit_Type" : "bf_Bit_Allen",
+                "bf_Nut_Type" : "bf_Nut_Hex",
+                "bf_Shank_Length" : 0.0,
+                "bf_Shank_Dia" : 3.0,
+                "bf_Phillips_Bit_Depth" : 1.1431535482406616,
+                "bf_Allen_Bit_Depth" : 1.5,
+                "bf_Allen_Bit_Flat_Distance" : 2.5,
+                "bf_Torx_Bit_Depth" : 1.5,
+                "bf_Torx_Size_Type" : "bf_Torx_T20",
+                "bf_Hex_Head_Height" : 2.0,
+                "bf_Hex_Head_Flat_Distance" : 5.5,
+                "bf_CounterSink_Head_Dia" : 6.300000190734863,
+                "bf_Cap_Head_Height" : 3.0,
+                "bf_Cap_Head_Dia" : 5.5,
+                "bf_Dome_Head_Dia" : 5.599999904632568,
+                "bf_Pan_Head_Dia" : 5.599999904632568,
+                "bf_Philips_Bit_Dia" : 1.8199999332427979,
+                "bf_Thread_Length" : 6.0,
+                "bf_Major_Dia" : 3.0,
+                "bf_Pitch" : 0.3499999940395355,
+                "bf_Minor_Dia" : 2.6211137771606445,
+                "bf_Crest_Percent" : 10,
+                "bf_Root_Percent" : 10,
+                "bf_Div_Count" : 36,
+                "bf_Hex_Nut_Height" : 2.4000000953674316,
+                "bf_Hex_Nut_Flat_Distance" : 5.5
+            },
+            "name" : "schraube.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 30,
+                        "NORMAL" : 31
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 8,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 29,
+                    "material" : 8,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "extras" : {
+                "Bolt" : 1,
+                "change" : 0,
+                "bf_Model_Type" : "bf_Model_Bolt",
+                "bf_Head_Type" : "bf_Head_Cap",
+                "bf_Bit_Type" : "bf_Bit_Allen",
+                "bf_Nut_Type" : "bf_Nut_Hex",
+                "bf_Shank_Length" : 0.0,
+                "bf_Shank_Dia" : 3.0,
+                "bf_Phillips_Bit_Depth" : 1.1431535482406616,
+                "bf_Allen_Bit_Depth" : 1.5,
+                "bf_Allen_Bit_Flat_Distance" : 2.5,
+                "bf_Torx_Bit_Depth" : 1.5,
+                "bf_Torx_Size_Type" : "bf_Torx_T20",
+                "bf_Hex_Head_Height" : 2.0,
+                "bf_Hex_Head_Flat_Distance" : 5.5,
+                "bf_CounterSink_Head_Dia" : 6.300000190734863,
+                "bf_Cap_Head_Height" : 3.0,
+                "bf_Cap_Head_Dia" : 5.5,
+                "bf_Dome_Head_Dia" : 5.599999904632568,
+                "bf_Pan_Head_Dia" : 5.599999904632568,
+                "bf_Philips_Bit_Dia" : 1.8199999332427979,
+                "bf_Thread_Length" : 6.0,
+                "bf_Major_Dia" : 3.0,
+                "bf_Pitch" : 0.3499999940395355,
+                "bf_Minor_Dia" : 2.6211137771606445,
+                "bf_Crest_Percent" : 10,
+                "bf_Root_Percent" : 10,
+                "bf_Div_Count" : 36,
+                "bf_Hex_Nut_Height" : 2.4000000953674316,
+                "bf_Hex_Nut_Flat_Distance" : 5.5
+            },
+            "name" : "schraube.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 32,
+                        "NORMAL" : 33
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 9,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 29,
+                    "material" : 9,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "extras" : {
+                "Bolt" : 1,
+                "change" : 0,
+                "bf_Model_Type" : "bf_Model_Bolt",
+                "bf_Head_Type" : "bf_Head_Cap",
+                "bf_Bit_Type" : "bf_Bit_Allen",
+                "bf_Nut_Type" : "bf_Nut_Hex",
+                "bf_Shank_Length" : 0.0,
+                "bf_Shank_Dia" : 3.0,
+                "bf_Phillips_Bit_Depth" : 1.1431535482406616,
+                "bf_Allen_Bit_Depth" : 1.5,
+                "bf_Allen_Bit_Flat_Distance" : 2.5,
+                "bf_Torx_Bit_Depth" : 1.5,
+                "bf_Torx_Size_Type" : "bf_Torx_T20",
+                "bf_Hex_Head_Height" : 2.0,
+                "bf_Hex_Head_Flat_Distance" : 5.5,
+                "bf_CounterSink_Head_Dia" : 6.300000190734863,
+                "bf_Cap_Head_Height" : 3.0,
+                "bf_Cap_Head_Dia" : 5.5,
+                "bf_Dome_Head_Dia" : 5.599999904632568,
+                "bf_Pan_Head_Dia" : 5.599999904632568,
+                "bf_Philips_Bit_Dia" : 1.8199999332427979,
+                "bf_Thread_Length" : 6.0,
+                "bf_Major_Dia" : 3.0,
+                "bf_Pitch" : 0.3499999940395355,
+                "bf_Minor_Dia" : 2.6211137771606445,
+                "bf_Crest_Percent" : 10,
+                "bf_Root_Percent" : 10,
+                "bf_Div_Count" : 36,
+                "bf_Hex_Nut_Height" : 2.4000000953674316,
+                "bf_Hex_Nut_Flat_Distance" : 5.5
+            },
+            "name" : "schraube.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 34,
+                        "NORMAL" : 35
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 10,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 29,
+                    "material" : 10,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "abschlussdeckel",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 36,
+                        "NORMAL" : 37,
+                        "TEXCOORD_0" : 38
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 11,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 39,
+                    "material" : 11,
+                    "mode" : 4
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        },
+        {
+            "sampler" : 0,
+            "source" : 4
+        },
+        {
+            "sampler" : 0,
+            "source" : 5
+        },
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 6
+        },
+        {
+            "sampler" : 0,
+            "source" : 7
+        },
+        {
+            "sampler" : 0,
+            "source" : 8
+        },
+        {
+            "sampler" : 0,
+            "source" : 9
+        },
+        {
+            "sampler" : 0,
+            "source" : 10
+        },
+        {
+            "sampler" : 0,
+            "source" : 9
+        },
+        {
+            "sampler" : 0,
+            "source" : 10
+        },
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Metal032_1K_NormalDX",
+            "uri" : "Metal032_1K_NormalDX.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Metal032_1K_Color",
+            "uri" : "Metal032_1K_Color.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Metal032_1K_Roughness",
+            "uri" : "Metal032_1K_Roughness.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "metal_0065_normal_directx_4k",
+            "uri" : "metal_0065_normal_directx_4k.png"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "metal_0065_color_4k",
+            "uri" : "metal_0065_color_4k.jpg"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "metal_0065_ao_4k-metal_0065_roughness_4k",
+            "uri" : "metal_0065_ao_4k-metal_0065_roughness_4k.png"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Metal009_1K_NormalDX",
+            "uri" : "Metal009_1K_NormalDX.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Metal009_1K_Color",
+            "uri" : "Metal009_1K_Color.jpg"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Metal009_1K_Metalness-Metal009_1K_Roughness",
+            "uri" : "Metal009_1K_Metalness-Metal009_1K_Roughness.png"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Plastic_004_normal",
+            "uri" : "Plastic_004_normal.jpg"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Plastic_004_roughness",
+            "uri" : "Plastic_004_roughness.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "componentType" : 5126,
+            "count" : 2296,
+            "max" : [
+                1.0005419254302979,
+                0.8279690146446228,
+                0.8864492774009705
+            ],
+            "min" : [
+                -2.9878313541412354,
+                -0.8881438970565796,
+                -0.7683713436126709
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 2296,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 2296,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 4536,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12342,
+            "max" : [
+                0.42141926288604736,
+                0.9084920287132263,
+                0.90860515832901
+            ],
+            "min" : [
+                0.017920909449458122,
+                -0.9002043604850769,
+                -0.918718159198761
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12342,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12342,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 24756,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 124,
+            "max" : [
+                0.019616544246673584,
+                0.22908756136894226,
+                0.41347450017929077
+            ],
+            "min" : [
+                0.01892268657684326,
+                -0.5154211521148682,
+                -0.36095231771469116
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 124,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 124,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 360,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 5220,
+            "max" : [
+                10.969655990600586,
+                10.5,
+                9.500000953674316
+            ],
+            "min" : [
+                -10.96965503692627,
+                0,
+                -9.5
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 5220,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 8274,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1878,
+            "max" : [
+                6,
+                47.099998474121094,
+                6
+            ],
+            "min" : [
+                -6,
+                -75.33333587646484,
+                -6
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1878,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 1878,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 1920,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 452,
+            "max" : [
+                1.0099601745605469,
+                0.7556536793708801,
+                0.7540127635002136
+            ],
+            "min" : [
+                0.5444463491439819,
+                -0.7500007152557373,
+                -0.7649456262588501
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 452,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 452,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 1020,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 902,
+            "max" : [
+                1.0099601745605469,
+                0.831918478012085,
+                0.8292688131332397
+            ],
+            "min" : [
+                0.5458214282989502,
+                -0.8323529362678528,
+                -0.8437646627426147
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 902,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 902,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 1920,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12128,
+            "max" : [
+                2.75,
+                8.539473533630371,
+                2.75
+            ],
+            "min" : [
+                -2.75,
+                0,
+                -2.75
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12128,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 18192,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12128,
+            "max" : [
+                2.75,
+                8.539473533630371,
+                2.75
+            ],
+            "min" : [
+                -2.75,
+                0,
+                -2.75
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12128,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12128,
+            "max" : [
+                2.75,
+                8.539473533630371,
+                2.75
+            ],
+            "min" : [
+                -2.75,
+                0,
+                -2.75
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12128,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12128,
+            "max" : [
+                2.75,
+                8.539473533630371,
+                2.75
+            ],
+            "min" : [
+                -2.75,
+                0,
+                -2.75
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 12128,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 8125,
+            "max" : [
+                0.3568822145462036,
+                0.9084920287132263,
+                0.90860515832901
+            ],
+            "min" : [
+                0.018644019961357117,
+                -0.9002043604850769,
+                -0.918718159198761
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 8125,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 8125,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 15405,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 16112,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 66208,
+            "byteOffset" : 16112
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 841,
+            "byteOffset" : 82320
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 19126,
+            "byteOffset" : 83164
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10589,
+            "byteOffset" : 102292
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3801,
+            "byteOffset" : 112884
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6452,
+            "byteOffset" : 116688
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 44713,
+            "byteOffset" : 123140
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 44713,
+            "byteOffset" : 167856
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 44713,
+            "byteOffset" : 212572
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 44713,
+            "byteOffset" : 257288
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 51209,
+            "byteOffset" : 302004
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 353216,
+            "uri" : "Cylinder_ad_ld.bin"
+        }
+    ]
+}

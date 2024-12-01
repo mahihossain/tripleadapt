@@ -1,0 +1,85 @@
+.TeacherContainer {
+    position: absolute !important;
+    left: 1%;
+    top: 9%;
+    width: 99%;
+    height: 90%;
+}
+
+.UserDropdown {
+    position: absolute !important;
+    left: 5%;
+    top: 2%;
+    width: auto;
+    height: 8%;
+}
+
+.PlotAutosizeTeacher {
+    display: inline-block;
+    width: 99% !important;
+    height: 99% !important;
+}
+
+.TeacherTime {
+    position: absolute !important;
+    left: 0.5%;
+    top: 0%;
+    width: 83%;
+    height: 28%;
+}
+
+.TeacherFailure {
+    position: absolute !important;
+    left: 0.5%;
+    top: 33.5% !important;
+    width: 83%;
+    height: 28%;
+    background-color: white;
+}
+
+.TeacherScore {
+    position: absolute !important;
+    left: 0.5%;
+    top: 67% !important;
+    width: 83%;
+    height: 28%;
+    background-color: white;
+}
+
+.TeacherTimeAvg {
+    position: absolute !important;
+    right: 0.5%;
+    top: 0%;
+    width: 15.5%;
+    height: 28%;
+}
+
+.TeacherFailureAvg {
+    position: absolute !important;
+    right: 0.5%;
+    top: 33.5%;
+    width: 15.5%;
+    height: 28%;
+}
+
+.TeacherScoreAvg {
+    position: absolute !important;
+    right: 0.5%;
+    top: 67%;
+    width: 15.5%;
+    height: 28%;
+}
+
+.Icon {
+    position: absolute;
+    left: 20%;
+    top: 0%;
+}
+
+.Number {
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    font-size: 95% !important;
+    width: 93%;
+}

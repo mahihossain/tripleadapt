@@ -1,0 +1,169 @@
+.main-navbar {
+    background-color: none;
+    position: relative;
+    height: 2%;
+    width: 2%;
+    top: 2.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-menu-bars {
+    margin-left: 0.25rem;
+    font-size: 2rem;
+}
+
+.main-nav-menu {
+    background-color: white;
+    width: 200px;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: -200px;
+    transition: 350ms;
+}
+
+.main-nav-menu.active {
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    transition: 350ms;
+    position: absolute
+}
+
+.main-nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 15%;
+}
+
+.main-nav-text-active {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 15%;
+}
+
+.main-nav-text a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.main-nav-text-active a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: #1a83ff;
+}
+
+.main-nav-text a:hover {
+    background-color: #1a83ff;
+    color: white!important;
+}
+
+.main-nav-text-active a:hover {
+    background-color: #1a83ff;
+    color: white!important;
+}
+
+.main-nav-menu-items {
+    width: 100%
+}
+
+.main-navbar-toggle {
+    background-color: white;
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    margin-left: 16px;
+}
+
+.main-back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 0px 8px 16px;
+    list-style: none;
+    height: 15%;
+    top: 100em;
+}
+
+.main-back-active {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 12%;
+}
+
+.main-back a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+}
+
+.main-back-active a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: #1a83ff;
+}
+
+
+.main-back a:hover {
+    background-color: white;
+    color: black!important;
+    border-style: solid;
+    border-color: red;
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+.main-back-active a:hover {
+    background-color: #1a83ff;
+    color: white!important;
+    
+}
